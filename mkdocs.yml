@@ -2,24 +2,39 @@ site_name: React Calendar
 
 theme:
   icon:
-      admonition:
-        <type>: <icon> 
+    admonition:
+      <type>: <icon>
+
   name: readthedocs
   nav_style: light
   highlightjs: true
   hljs_languages:
-        - javascript
+    - javascript
   font:
     text: Roboto
   features:
     - content.code.copy
     - content.code.select
     - content.code.annotate
-  extra_css: 
-    -stylesheets/extra.css
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.path
+    - navigation.indexes
+  extra_css: -stylesheets/extra.css
+
+  nav:
+    - Section:
+        - CRUD/create.md
+        - Create Event: section/create.md
+        - Delete Event: section/delete.md
+    - Section:
+        - Home/index.md
 
 plugins:
- - glightbox
+  - glightbox
 
 markdown_extensions:
   - attr_list

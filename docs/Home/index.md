@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="/stylesheets/extra.css" />
+<link rel="stylesheet" href="../stylesheets/extra.css" />
 
 # Welcome to React Calendar
 
