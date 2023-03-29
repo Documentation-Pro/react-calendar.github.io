@@ -2,9 +2,14 @@
 
 # Welcome to React Calendar
 
+
+React-Calendar is the ultimate lightweight Calendar for your React application. Please note that React-Calendar is under constant development and if you would like to see official documentation, please go to the following link.
+
 For full documentation visit [npm-React-Calendar](https://www.npmjs.com/package/react-calendar)
 
 For React Calendars official webpage visit [React-Calendar](https://projects.wojtekmaj.pl/react-calendar/)
+
+Want to try a live demo? Visit [Live Demo](https://projects.wojtekmaj.pl/react-calendar/)
 
 <figure markdown>
   ![React Calendar](https://camo.githubusercontent.com/366e44bda8cd8313fa3043f9ad8c50a205696527268fb410e22db006a917afa9/68747470733a2f2f70726f6a656374732e776f6a74656b6d616a2e706c2f72656163742d63616c656e6461722f72656163742d63616c656e6461722e6a7067){ width="300" }
@@ -20,7 +25,6 @@ For React Calendars official webpage visit [React-Calendar](https://projects.woj
 * Install by executing `npm install react-calendar` or `yarn add react-calendar`
 * Import by adding `import Calendar from 'react-calendar'`
 * Use by adding `<Calendar />` 
-* Use `onChange` prop for getting new values.
 
 ## Setup
 

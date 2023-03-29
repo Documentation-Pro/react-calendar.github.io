@@ -1,0 +1,13 @@
+SETUP
+    setup calendar stuff
+
+READ
+    reading dates/months/etc..
+
+STYLING
+    all the format functions
+
+EVENT LISTENERS
+    onclick, on change etc
+
+
