@@ -50,11 +50,17 @@ theme:
   extra_css: -stylesheets/extra.css
 
   nav:
-    - Home: index.md
-    - Foo:
-        - Setup: setup.md
-        - EventListeners: eventlisteners.md
-        - Styling: styling.md
+    - Home:
+        - main: index.md
+    - Eventlistener:
+        - main: event-section/eventlisteners.md
+        - overview: event-section/overview.md
+    - Styling:
+        - main: styling/styling.md
+        - overview: styling/overview.md
+    - Setup:
+        - overview: setup/setup.md
+        - conclusion: setup/conclusion.md
 
 plugins:
   - glightbox
