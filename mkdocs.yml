@@ -1,4 +1,11 @@
-site_name: React Calendar
+site_name: React Calendar Documentation
+nav:
+  - Home: "index.md"
+  - Project Structure: "pages/project-structure.md"
+  - Event Listeners: "pages/eventlistener.md"
+  - Setup Project: "pages/setup.md"
+  - Styling: "pages/styling.md"
+  - Glossary: "pages/glossary.md"
 
 theme:
   name: material
@@ -7,24 +14,14 @@ theme:
   hljs_languages:
     - javascript
 
-  palette:
-    - scheme: default
-      primary: indigo
-      accent: indigo
-      toggle:
-        icon: material/brightness-7
-        name: Switch to dark mode
-    - scheme: slate
-      primary: indigo
-      accent: indigo
-      toggle:
-        icon: material/brightness-4
-        name: Switch to light mode
   font:
     text: Roboto
     code: Roboto Mono
-
   features:
+    # - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - toc.integrate
     - announce.dismiss
     - content.action.edit
     - content.action.view
@@ -38,8 +35,6 @@ theme:
     - navigation.indexes
     - navigation.instant
     - navigation.prune
-    - navigation.sections
-    - navigation.tabs
     - navigation.tabs.sticky
     - navigation.top
     - navigation.tracking
@@ -47,20 +42,30 @@ theme:
     - search.share
     - search.suggest
     - toc.follow
+  palette:
+    # Light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: teal
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+
+    # Dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: lime
+      accent: blue
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
+
   extra_css: -stylesheets/extra.css
 
-  nav:
-    - Home:
-        - main: index.md
-    - Eventlistener:
-        - main: event-section/eventlisteners.md
-        - overview: event-section/overview.md
-    - Styling:
-        - main: styling/styling.md
-        - overview: styling/overview.md
-    - Setup:
-        - overview: setup/setup.md
-        - conclusion: setup/conclusion.md
+  # Necessary for search to work properly
+include_search_page: false
+search_index_only: true
 
 plugins:
   - glightbox
