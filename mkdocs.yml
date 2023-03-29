@@ -1,10 +1,10 @@
 site_name: React Calendar Documentation
 nav:
   - Home: "index.md"
-  - Project Structure: "pages/project-structure.md"
-  - Event Listeners: "pages/eventlistener.md"
   - Setup Project: "pages/setup.md"
+  - Project Structure: "pages/project-structure.md"
   - Styling: "pages/styling.md"
+  - Event Listeners: "pages/eventlistener.md"
   - Glossary: "pages/glossary.md"
 
 theme:
