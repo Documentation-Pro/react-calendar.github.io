@@ -73,6 +73,7 @@ search_index_only: true
 
 plugins:
   - glightbox
+  - search
 
 markdown_extensions:
   - attr_list
