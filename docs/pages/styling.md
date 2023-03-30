@@ -1,3 +1,5 @@
+<link rel="stylesheet" href="../../stylesheets/extra.css" />
+
 ## Overview
 React Calendar is fully open-source providing flexibility to all developers to use the calendar as they choose. As for the overall appearance of your calendar, we recommend importing our default css stylesheet and tweak accordingly.
 

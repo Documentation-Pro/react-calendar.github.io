@@ -1,3 +1,5 @@
+<link rel="stylesheet" href="../../stylesheets/extra.css" />
+
 ## Overview
 React Calendar is a simple and easy-to-use library for adding calendar functionality to your React application. As for event listening such as onCLick, React Calendar can customize the appearance and behavior of the calendar using various props.
 

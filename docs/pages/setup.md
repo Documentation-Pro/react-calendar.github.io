@@ -1,4 +1,6 @@
-## Setup React Calendar in a new project
+<link rel="stylesheet" href="../../stylesheets/extra.css" />
+
+## Setup React Calendar
 1. Create a new project directory
 2. Open your desired terminal
 3. Run the following commands in order:
@@ -32,25 +34,8 @@ function App() {
 
 export default App;
 ```
-## Setup React Calendar in an existing project
-
 
 ## General Usage
-Read date value and set min date to todays date:
-onClickDay is the props we pass to the Calendar component and the first argument is the value of the day 
-
-``` javaScript linenums="1"
-import Calendar from 'react-calendar'
-function App() {
-  return (
-    <div className="App">
-      <Calendar onClickDay={(value, event) => alert(value)} minDate={new Date()} />
-    </div>
-  );
-}
-
-export default App;
-```
+Everything you need to access/manipulate with React Calendar is going to be found on the Calendar Components props. You can find about more about the interactivity of your calendar here: <a href='../eventlistener/'>Event Listeners</a>
 
 
-## Conclusion
