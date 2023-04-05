@@ -174,6 +174,11 @@
     Conclusion
   </a>
 </li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#props_1">
+    Props
+  </a>
+</li>
 </ul>
 </nav>
 </li>
@@ -245,6 +250,54 @@ You can read the selected date value from the calendar using the onClickDay prop
 </span><span id="__span-0-6"><a href="#__codelineno-0-6" id="__codelineno-0-6" name="__codelineno-0-6"></a><span class="w">      </span><span class="o">&lt;</span><span class="nx">Calendar</span><span class="w"> </span><span class="nx">onClickDay</span><span class="o">=</span><span class="p">{(</span><span class="nx">value</span><span class="p">,</span><span class="w"> </span><span class="nx">event</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">alert</span><span class="p">(</span><span class="nx">value</span><span class="p">)}</span><span class="w"> </span><span class="nx">minDate</span><span class="o">=</span><span class="p">{</span><span class="ow">new</span><span class="w"> </span><span class="nb">Date</span><span class="p">()}</span><span class="w"> </span><span class="o">/&gt;</span>
 </span><span id="__span-0-7"><a href="#__codelineno-0-7" id="__codelineno-0-7" name="__codelineno-0-7"></a><span class="w">    </span><span class="o">&lt;</span><span class="err">/div&gt;</span>
 </span><span id="__span-0-8"><a href="#__codelineno-0-8" id="__codelineno-0-8" name="__codelineno-0-8"></a><span class="w">  </span><span class="p">);</span>
+</span></code></pre></div>
+<h2 id="props_1">Props</h2>
+<p>React Calendar comes with several props that allow you to customize its appearance and behavior.</p>
+<p><code>onChange</code></p>
+<p>Type: function</p>
+<p>A function that gets called every time the user selects a new date. The function receives the selected date as an argument.</p>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-1-1"><a href="#__codelineno-1-1" id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="kd">function</span><span class="w"> </span><span class="nx">handleDateChange</span><span class="p">(</span><span class="nx">date</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-1-2"><a href="#__codelineno-1-2" id="__codelineno-1-2" name="__codelineno-1-2"></a><span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="sb">`Selected date: </span><span class="si">${</span><span class="nx">date</span><span class="si">}</span><span class="sb">`</span><span class="p">);</span>
+</span><span id="__span-1-3"><a href="#__codelineno-1-3" id="__codelineno-1-3" name="__codelineno-1-3"></a><span class="p">}</span>
+</span><span id="__span-1-4"><a href="#__codelineno-1-4" id="__codelineno-1-4" name="__codelineno-1-4"></a>
+</span><span id="__span-1-5"><a href="#__codelineno-1-5" id="__codelineno-1-5" name="__codelineno-1-5"></a><span class="o">&lt;</span><span class="nx">Calendar</span><span class="w"> </span><span class="nx">onChange</span><span class="o">=</span><span class="p">{</span><span class="nx">handleDateChange</span><span class="p">}</span><span class="w"> </span><span class="o">/&gt;</span>
+</span></code></pre></div>
+<p><code>value</code>
+Type: Date</p>
+<blockquote>
+<p>The currently selected date. This prop is required if you want to use React Calendar as a controlled component.</p>
+</blockquote>
+<p><div class="language-js highlight"><pre><span></span><code><span id="__span-2-1"><a href="#__codelineno-2-1" id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="o">&lt;</span><span class="nx">Calendar</span><span class="w"> </span><span class="nx">value</span><span class="o">=</span><span class="p">{</span><span class="ow">new</span><span class="w"> </span><span class="nb">Date</span><span class="p">()}</span><span class="w"> </span><span class="o">/&gt;</span>
+</span></code></pre></div>
+<code>minDate</code>
+Type: Date</p>
+<p>The minimum date that can be selected. Users won't be able to select a date earlier than this date.</p>
+<p><div class="language-js highlight"><pre><span></span><code><span id="__span-3-1"><a href="#__codelineno-3-1" id="__codelineno-3-1" name="__codelineno-3-1"></a><span class="o">&lt;</span><span class="nx">Calendar</span><span class="w"> </span><span class="nx">minDate</span><span class="o">=</span><span class="p">{</span><span class="ow">new</span><span class="w"> </span><span class="nb">Date</span><span class="p">(</span><span class="s1">'2022-01-01'</span><span class="p">)}</span><span class="w"> </span><span class="o">/&gt;</span>
+</span></code></pre></div>
+<code>maxDate</code>
+Type: Date</p>
+<p>The maximum date that can be selected. Users won't be able to select a date later than this date.
+<div class="language-js highlight"><pre><span></span><code><span id="__span-4-1"><a href="#__codelineno-4-1" id="__codelineno-4-1" name="__codelineno-4-1"></a><span class="o">&lt;</span><span class="nx">Calendar</span><span class="w"> </span><span class="nx">maxDate</span><span class="o">=</span><span class="p">{</span><span class="ow">new</span><span class="w"> </span><span class="nb">Date</span><span class="p">(</span><span class="s1">'2022-12-31'</span><span class="p">)}</span><span class="w"> </span><span class="o">/&gt;</span>
+</span></code></pre></div></p>
+<p><code>tileClassName</code>
+Type: function | string | string[]</p>
+<p>A function that gets called for each tile and returns a string with the CSS class name(s) to apply to the tile. Alternatively, you can pass a string or an array of strings with the CSS class name(s) to apply to all tiles.</p>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-5-1"><a href="#__codelineno-5-1" id="__codelineno-5-1" name="__codelineno-5-1"></a><span class="kd">function</span><span class="w"> </span><span class="nx">getTileClassName</span><span class="p">({</span><span class="w"> </span><span class="nx">activeStartDate</span><span class="p">,</span><span class="w"> </span><span class="nx">date</span><span class="p">,</span><span class="w"> </span><span class="nx">view</span><span class="w"> </span><span class="p">})</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-5-2"><a href="#__codelineno-5-2" id="__codelineno-5-2" name="__codelineno-5-2"></a><span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">view</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="s1">'month'</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nx">date</span><span class="p">.</span><span class="nx">getDay</span><span class="p">()</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="mf">0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-5-3"><a href="#__codelineno-5-3" id="__codelineno-5-3" name="__codelineno-5-3"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="s1">'sunday'</span><span class="p">;</span>
+</span><span id="__span-5-4"><a href="#__codelineno-5-4" id="__codelineno-5-4" name="__codelineno-5-4"></a><span class="w">  </span><span class="p">}</span>
+</span><span id="__span-5-5"><a href="#__codelineno-5-5" id="__codelineno-5-5" name="__codelineno-5-5"></a><span class="p">}</span>
+</span><span id="__span-5-6"><a href="#__codelineno-5-6" id="__codelineno-5-6" name="__codelineno-5-6"></a>
+</span><span id="__span-5-7"><a href="#__codelineno-5-7" id="__codelineno-5-7" name="__codelineno-5-7"></a><span class="o">&lt;</span><span class="nx">Calendar</span><span class="w"> </span><span class="nx">tileClassName</span><span class="o">=</span><span class="p">{</span><span class="nx">getTileClassName</span><span class="p">}</span><span class="w"> </span><span class="o">/&gt;</span>
+</span></code></pre></div>
+<p><code>tileContent</code>
+Type: function | React.ReactNode</p>
+<p>A function that gets called for each tile and returns a React node to render inside the tile. Alternatively, you can pass a React node to render inside all tiles.</p>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-6-1"><a href="#__codelineno-6-1" id="__codelineno-6-1" name="__codelineno-6-1"></a><span class="kd">function</span><span class="w"> </span><span class="nx">getTileContent</span><span class="p">({</span><span class="w"> </span><span class="nx">date</span><span class="w"> </span><span class="p">})</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-6-2"><a href="#__codelineno-6-2" id="__codelineno-6-2" name="__codelineno-6-2"></a><span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="o">&lt;</span><span class="nx">div</span><span class="o">&gt;</span><span class="p">{</span><span class="nx">date</span><span class="p">.</span><span class="nx">getDate</span><span class="p">()}</span><span class="o">&lt;</span><span class="err">/div&gt;;</span>
+</span><span id="__span-6-3"><a href="#__codelineno-6-3" id="__codelineno-6-3" name="__codelineno-6-3"></a><span class="p">}</span>
+</span><span id="__span-6-4"><a href="#__codelineno-6-4" id="__codelineno-6-4" name="__codelineno-6-4"></a>
+</span><span id="__span-6-5"><a href="#__codelineno-6-5" id="__codelineno-6-5" name="__codelineno-6-5"></a><span class="o">&lt;</span><span class="nx">Calendar</span><span class="w"> </span><span class="nx">tileContent</span><span class="o">=</span><span class="p">{</span><span class="nx">getTileContent</span><span class="p">}</span><span class="w"> </span><span class="o">/&gt;</span><span class="sb">```</span>
 </span></code></pre></div>
 <div class="admonition success">
 <p class="admonition-title">Success</p>
