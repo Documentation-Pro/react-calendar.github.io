@@ -33,7 +33,7 @@
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
 <label class="md-overlay" for="__drawer"></label>
 <div data-md-component="skip">
-<a class="md-skip" href="#welcome-to-react-calendar">
+<a class="md-skip" href="#react-calendar-documentation-installation-usage-and-customization-guide">
           Skip to content
         </a>
 </div>
@@ -139,8 +139,47 @@
     </label>
 <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
 <li class="md-nav__item">
+<a class="md-nav__link" href="#what-is-react-calendar">
+    What is React Calendar? 📆
+  </a>
+</li>
+<li class="md-nav__item">
 <a class="md-nav__link" href="#intended-users">
     Intended Users
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#getting-started">
+    Getting Started
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#basic-usage">
+    Basic Usage
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#advanced-usage">
+    Advanced Usage
+  </a>
+<nav aria-label="Advanced Usage" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#props">
+    Props
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#styling">
+    Styling
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#note-and-warning-messages">
+    Note and warning messages
   </a>
 </li>
 </ul>
@@ -158,7 +197,7 @@
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="pages/styling/">
-        Styling
+        Styling React Calendar
       </a>
 </li>
 <li class="md-nav__item">
@@ -184,35 +223,32 @@
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
 <p><link href="../stylesheets/extra.css" rel="stylesheet"/></p>
-<h1 id="welcome-to-react-calendar">Welcome to React Calendar</h1>
-<p>React-Calendar is the ultimate lightweight Calendar for your React application. Please note that React-Calendar is under constant development and if you would like to see official documentation, please go to the following link.</p>
-<p>For full documentation visit <a href="https://www.npmjs.com/package/react-calendar">npm-React-Calendar</a></p>
+<p><link href="../stylesheets/extra.css" rel="stylesheet"/></p>
+<h1 id="react-calendar-documentation-installation-usage-and-customization-guide">React Calendar Documentation: Installation, Usage, and Customization Guide</h1>
+<p>Welcome to our documentation for React Calendar! 📖 In this guide, you will learn how to install and use the React Calendar package, as well as customize it to suit your needs.</p>
+<p>For full official npm documentation visit <a href="https://www.npmjs.com/package/react-calendar">npm-React-Calendar</a></p>
 <p>For React Calendars official webpage visit <a href="https://projects.wojtekmaj.pl/react-calendar/">React-Calendar</a></p>
 <p>Want to try a live demo? Visit <a href="https://projects.wojtekmaj.pl/react-calendar/">Live Demo</a></p>
+<h2 id="what-is-react-calendar">What is React Calendar? 📆</h2>
+<p>React Calendar is a lightweight calendar package designed for use in React applications. It provides a simple and customizable way to display calendars and schedule events. It is currently being managed by a developer under the name Wojciech Maj. The developer has made this amazing tool light and fast, extremely customizable, work with any language, rock-solid/bug-free, and best of all open source! (forever)</p>
 <h2 id="intended-users">Intended Users</h2>
-<p>This documentation is targeted towards the following users:</p>
+<p>Our documentation is targeted towards the following users:</p>
 <ul>
-<li>Beginner to intermediate developers who need to setup a React Calendar for a personal project.</li>
-<li>Software development teams working on small or medium-sized web applications.</li>
+<li>Beginner developers who need to set up a React Calendar for a personal project.</li>
 </ul>
+<h2 id="getting-started">Getting Started</h2>
+<p>To use React Calendar in your project, you'll need to have the following pre-requisites installed:</p>
+<blockquote>
+<p>React</p>
+<p>npm</p>
+</blockquote>
 <figure>
 <p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="100%" href="https://camo.githubusercontent.com/366e44bda8cd8313fa3043f9ad8c50a205696527268fb410e22db006a917afa9/68747470733a2f2f70726f6a656374732e776f6a74656b6d616a2e706c2f72656163742d63616c656e6461722f72656163742d63616c656e6461722e6a7067"><img alt="React Calendar" src="https://camo.githubusercontent.com/366e44bda8cd8313fa3043f9ad8c50a205696527268fb410e22db006a917afa9/68747470733a2f2f70726f6a656374732e776f6a74656b6d616a2e706c2f72656163742d63616c656e6461722f72656163742d63616c656e6461722e6a7067" width="300"/></a>
 </p>
 <figcaption>React Calendar</figcaption>
 </figure>
-<h1 id="pre-requisite">Pre-requisite</h1>
-<div class="language-text highlight"><pre><span></span><code>React
-npm
-</code></pre></div>
-<h2 id="install">Install</h2>
-<ul>
-<li>Install by executing <code>npm install react-calendar</code> or <code>yarn add react-calendar</code></li>
-<li>Import by adding <code>import Calendar from 'react-calendar'</code></li>
-<li>Use by adding render component <code>&lt;Calendar /&gt;</code> </li>
-</ul>
-<p>for a more detailed install guide, click <a href="/pages/setup">here</a></p>
-<h2 id="usage">Usage</h2>
-<p>Here's an example of basic usage:</p>
+<h2 id="basic-usage">Basic Usage</h2>
+<p>Once you have React Calendar installed, you can use it in your <a href="https://react.dev/">React</a> application by importing the Calendar component and rendering it in your component. If you are not familiar with React, this may be a difficult task at first, that's why we are going to show you. 😎 Here's an example of how to use React Calendar in a basic React component:</p>
 <div class="language-javaScript highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1"> 1</a></span>
 <span class="normal"><a href="#__codelineno-0-2"> 2</a></span>
 <span class="normal"><a href="#__codelineno-0-3"> 3</a></span>
@@ -237,18 +273,41 @@ npm
 </span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11"></a><span class="w">    </span><span class="p">);</span>
 </span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12"></a><span class="w">    </span><span class="p">}</span>
 </span></code></pre></div></td></tr></table></div>
-<h2 id="customizing-your-calendar">Customizing your Calendar</h2>
-<p>Custom styling - If you want to use default React-Calendar styling to build upon its existings syles, you can import React-Calendar's styles by importing react-calendars default css file (this will make it easier to customize as you can see existing styles):</p>
+<p>So in this example, we are importing the Calendar component from the react-calendar package and using the useState hook to manage the state of the selected date. </p>
+<p>If you're not familiar with <a href="https://react.dev/">React</a> hooks, you can find out more about them <a href="https://react.dev/learn#using-hooks">here</a></p>
+<p>We then render the Calendar component with the onChange and value props to enable date selection and update the selected date state.</p>
+<p>I should mention that this is just a basic example of how to use <a href="https://www.npmjs.com/package/react-calendar">React Calendar</a>, and that you can definitely customize it to suit your needs by passing additional props and styles to the Calendar component as needed.</p>
+<h2 id="advanced-usage">Advanced Usage</h2>
+<p>Once you've gotten the hang of things mentioned above in the basic usage section, you might be interested in getting more advanced with <a href="https://www.npmjs.com/package/react-calendar">React Calendar</a>.</p>
+<p>Thankfully, <a href="https://www.npmjs.com/package/react-calendar">React Calendar</a> provides many props and options for customization. Here are some common props that you can use to customize your calendar:</p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>Again, please keep in mind that there are many more available props to use.</p>
+<p>You can find a list of all of the available props <a href="https://www.npmjs.com/package/react-calendar">here</a></p>
+</div>
+<h3 id="props">Props</h3>
+<ul>
+<li><code>value</code> : sets the selected date.</li>
+<li><code>onChange</code> : a function that is called when the date selection changes.</li>
+<li><code>minDate</code> and <code>maxDate</code> : sets the minimum and maximum selectable dates.</li>
+<li><code>calendarType</code> : sets the calendar type (e.g., US or ISO 8601).</li>
+<li><code>showNavigation</code> : shows or hides the navigation buttons.</li>
+<li><code>tileClassName</code> : a function that is called for each tile to set the class name.</li>
+<li><code>tileContent</code> : a function that is called for each tile to set the content.</li>
+</ul>
+<h3 id="styling">Styling</h3>
+<p>If you want to use default Calendar styling to build upon its existings syles, you can import React-Calendar's styles by importing Calendar.css</p>
 <div class="language-javascript highlight"><pre><span></span><code><span id="__span-1-1"><a href="#__codelineno-1-1" id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="k">import</span><span class="w"> </span><span class="s1">'react-calendar/dist/Calendar.css'</span><span class="p">;</span>
 </span></code></pre></div>
 <h2 id="note-and-warning-messages">Note and warning messages</h2>
+<p>In the documentation you will see a series of indicator messages with different meanings. The messages will be as follows:</p>
 <div class="admonition danger">
 <p class="admonition-title">Danger</p>
 <p>Specifies actions that may cause an error or will cause the application to crash.</p>
 </div>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p>Specifies content that must be read before proceeding.</p>
+<p>Specifies content that must be read before proceeding, so please pay attention!</p>
 </div>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
@@ -256,8 +315,16 @@ npm
 </div>
 <div class="admonition success">
 <p class="admonition-title">Success</p>
-<p>Indicates what success looks like.</p>
+<p>Indicates you successfully completed a section or task, good job!</p>
 </div>
+<h1 id="conclusion">Conclusion</h1>
+<p>We hope you find our React Calendar documentation helpful! If you have any questions or feedback, please do not hesitate to contact us.</p>
+<h2 id="contributers">contributers</h2>
+<blockquote>
+<p>Jack Boeri - jboeri@my.bcit.ca</p>
+<p>Paarth Dhammi - pdhammi@my.bcit.ca</p>
+</blockquote>
+<p>Happy coding! 😄</p>
 </article>
 </div>
 <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
