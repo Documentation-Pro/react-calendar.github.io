@@ -5,7 +5,8 @@ In this section I will walk you through the installation of [React Calendar](htt
 
 ## Installation Steps for React Calendar
 
-[`Compatibility`](https://github.com/wojtekmaj/react-calendar#compatibility) Your project needs to use [React 16.3](https://react.dev/) or later.
+!!! warning
+    As for [Compatibility](https://github.com/wojtekmaj/react-calendar#compatibility), your project needs to use [React 16.3](https://react.dev/) or later.
 
 [React Calendar](https://www.npmjs.com/package/react-calendar) uses modern web technologies. That's why it's so fast, lightweight and easy to style. This, however, comes at a cost of supporting only modern browsers.
  
@@ -68,4 +69,4 @@ This should automatically open up your app in your systems default web browser.
 !!! success
     Indicates what success looks like.
 
-You should now have a working React Calendar in your React Application. Great work!
+  You should now have a working React Calendar in your React Application. Great work!

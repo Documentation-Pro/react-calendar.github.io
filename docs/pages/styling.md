@@ -1,7 +1,15 @@
 <link rel="stylesheet" href="../../stylesheets/extra.css" />
 
 ## Overview
-React Calendar is fully open-source providing flexibility to all developers to use the calendar as they choose. As for the overall appearance of your calendar, we recommend importing our default css stylesheet and tweak accordingly.
+[React Calendar](https://www.npmjs.com/package/react-calendar) is fully open-source providing flexibility to all developers to use the calendar as they choose. As for the overall appearance of your calendar, we recommend importing our default css stylesheet and tweak accordingly as this calendar component was meant to handle the javascript logic for you.
+
+The first image shows what it will look like after setting up.
+
+The second image shows the Calendar with the default stylesheet imported.
+
+
+  ![No styles](../images/before-styles.png){ height=100px }
+  ![Imported stylesheet](../images/after-styles.png){ height=100px }
 
 ## Customization
 Customizing your Calendar
@@ -9,12 +17,19 @@ Custom styling - If you want to use default React-Calendar styling to build upon
 ```js
 import 'react-calendar/dist/Calendar.css';
 ```
-## Conclusion
 
-In your node_modules / react-calender / dist / Calender.css, you will find the styles for your React Calendar. You can either import them or copy and paste the css file from the directory /node_modules/react-calender/dist/Calender.css.
+You can either manually copy the css file for the Calendar component and make changes as you wish
+```js
+node_modules/react-calender/dist/Calender.css
+```
+Or, you can either import the css file directly
+
+```js
+import 'react-calendar/dist/Calendar.css';
+```
 
 `Calendar.css` looks something like this:
-```js
+```js 
 .react-calendar {
   width: 350px;
   max-width: 100%;

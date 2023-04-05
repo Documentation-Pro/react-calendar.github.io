@@ -34,17 +34,9 @@ This documentation is targeted towards the following users:
 
 * Install by executing `npm install react-calendar` or `yarn add react-calendar`
 * Import by adding `import Calendar from 'react-calendar'`
-* Use by adding `<Calendar />` 
+* Use by adding render component `<Calendar />` 
 
-## Setup
-
-* `Compatibility` Your project needs to use React 16.3 or later.
-
-* `React-Calendar` uses modern web technologies. That's why it's so fast, lightweight and easy to style. This, however, comes at a cost of supporting only modern browsers.
-
-* `Legacy browsers`
-If you need to support legacy browsers like Internet Explorer 10, you will need to use Intl.js or another Intl polyfill along with React-Calendar.
-
+for a more detailed install guide, click <a href='/pages/setup'>here</a>
 
 ## Usage
 Here's an example of basic usage:
@@ -66,7 +58,7 @@ Here's an example of basic usage:
 
 ## Customizing your Calendar
 
-* `Custom styling` - If you want to use default React-Calendar styling to build upon its existings syles, you can import React-Calendar's styles by importing react-calendars default css file (this will make it easier to customize as you can see existing styles):
+Custom styling - If you want to use default React-Calendar styling to build upon its existings syles, you can import React-Calendar's styles by importing react-calendars default css file (this will make it easier to customize as you can see existing styles):
 
 ```javascript
 import 'react-calendar/dist/Calendar.css';
