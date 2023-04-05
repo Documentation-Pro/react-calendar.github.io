@@ -1,24 +1,34 @@
 <link rel="stylesheet" href="../stylesheets/extra.css" />
 
-# Welcome to React Calendar
+<link rel="stylesheet" href="../stylesheets/extra.css" />
 
+# React Calendar Documentation: Installation, Usage, and Customization Guide
 
-React-Calendar is the ultimate lightweight Calendar for your React application. Please note that React-Calendar is under constant development and if you would like to see official documentation, please go to the following link.
+Welcome to our documentation for React Calendar! 📖 In this guide, you will learn how to install and use the React Calendar package, as well as customize it to suit your needs.
 
-For full documentation visit [npm-React-Calendar](https://www.npmjs.com/package/react-calendar)
+For full official npm documentation visit [npm-React-Calendar](https://www.npmjs.com/package/react-calendar)
 
 For React Calendars official webpage visit [React-Calendar](https://projects.wojtekmaj.pl/react-calendar/)
 
 Want to try a live demo? Visit [Live Demo](https://projects.wojtekmaj.pl/react-calendar/)
 
+## What is React Calendar? 📆
+
+React Calendar is a lightweight calendar package designed for use in React applications. It provides a simple and customizable way to display calendars and schedule events. It is currently being managed by a developer under the name Wojciech Maj. The developer has made this amazing tool light and fast, extremely customizable, work with any language, rock-solid/bug-free, and best of all open source! (forever)
 
 ## Intended Users
 
-This documentation is targeted towards the following users:
+Our documentation is targeted towards the following users:
 
-- Beginner to intermediate developers who need to setup a React Calendar for a personal project.
-- Software development teams working on small or medium-sized web applications.
+- Beginner developers who need to set up a React Calendar for a personal project.
 
+## Getting Started
+
+To use React Calendar in your project, you'll need to have the following pre-requisites installed:
+
+ > React
+
+ > npm
 
 
 <figure markdown>
@@ -26,20 +36,9 @@ This documentation is targeted towards the following users:
   <figcaption>React Calendar</figcaption>
 </figure>
 
-# Pre-requisite
-    React
-    npm
 
-## Install
-
-* Install by executing `npm install react-calendar` or `yarn add react-calendar`
-* Import by adding `import Calendar from 'react-calendar'`
-* Use by adding render component `<Calendar />` 
-
-for a more detailed install guide, click <a href='/pages/setup'>here</a>
-
-## Usage
-Here's an example of basic usage:
+## Basic Usage
+Once you have React Calendar installed, you can use it in your [React](https://react.dev/) application by importing the Calendar component and rendering it in your component. If you are not familiar with React, this may be a difficult task at first, that's why we are going to show you. 😎 Here's an example of how to use React Calendar in a basic React component:
 
 ``` javaScript linenums="1"
     import React, { useState } from 'react';
@@ -56,9 +55,38 @@ Here's an example of basic usage:
     }
 ```
 
-## Customizing your Calendar
+So in this example, we are importing the Calendar component from the react-calendar package and using the useState hook to manage the state of the selected date. 
 
-Custom styling - If you want to use default React-Calendar styling to build upon its existings syles, you can import React-Calendar's styles by importing react-calendars default css file (this will make it easier to customize as you can see existing styles):
+If you're not familiar with [React](https://react.dev/) hooks, you can find out more about them [here](https://react.dev/learn#using-hooks)
+
+We then render the Calendar component with the onChange and value props to enable date selection and update the selected date state.
+
+I should mention that this is just a basic example of how to use [React Calendar](https://www.npmjs.com/package/react-calendar), and that you can definitely customize it to suit your needs by passing additional props and styles to the Calendar component as needed.
+
+## Advanced Usage
+
+Once you've gotten the hang of things mentioned above in the basic usage section, you might be interested in getting more advanced with [React Calendar](https://www.npmjs.com/package/react-calendar).
+
+Thankfully, [React Calendar](https://www.npmjs.com/package/react-calendar) provides many props and options for customization. Here are some common props that you can use to customize your calendar:
+
+!!! Info
+    Again, please keep in mind that there are many more available props to use.
+
+    You can find a list of all of the available props [here](https://www.npmjs.com/package/react-calendar)
+
+### Props
+
+* `value` : sets the selected date.
+* `onChange` : a function that is called when the date selection changes.
+* `minDate` and `maxDate` : sets the minimum and maximum selectable dates.
+* `calendarType` : sets the calendar type (e.g., US or ISO 8601).
+* `showNavigation` : shows or hides the navigation buttons.
+* `tileClassName` : a function that is called for each tile to set the class name.
+* `tileContent` : a function that is called for each tile to set the content.
+
+### Styling
+
+If you want to use default Calendar styling to build upon its existings syles, you can import React-Calendar's styles by importing Calendar.css
 
 ```javascript
 import 'react-calendar/dist/Calendar.css';
@@ -66,22 +94,28 @@ import 'react-calendar/dist/Calendar.css';
 
 ## Note and warning messages
 
+In the documentation you will see a series of indicator messages with different meanings. The messages will be as follows:
+
 !!! danger
     Specifies actions that may cause an error or will cause the application to crash.
 
-[comment]: <> (!!! failure)
-
-[comment]: <> (    Specifies actions that may lead to unexpected behaviour.)
-
-[comment]: <> (!!! bug)
-
-[comment]: <> (    Specifies actions that may cause an error.)
-
 !!! warning
-    Specifies content that must be read before proceeding.
+    Specifies content that must be read before proceeding, so please pay attention!
 
 !!! Info
     Indicates additional information or tips.
 
 !!! success
-    Indicates what success looks like.
+    Indicates you successfully completed a section or task, good job!
+
+# Conclusion
+
+We hope you find our React Calendar documentation helpful! If you have any questions or feedback, please do not hesitate to contact us.
+
+## contributers
+
+> Jack Boeri - jboeri@my.bcit.ca
+
+> Paarth Dhammi - pdhammi@my.bcit.ca
+
+Happy coding! 😄

@@ -3,7 +3,7 @@ nav:
   - Home: "index.md"
   - Installing React Calendar: "pages/setup.md"
   - Project Structure: "pages/project-structure.md"
-  - Styling: "pages/styling.md"
+  - Styling React Calendar: "pages/styling.md"
   - Event Listeners: "pages/eventlistener.md"
   - Troubleshooting: "pages/troubleshooting.md"
   - Glossary: "pages/glossary.md"
