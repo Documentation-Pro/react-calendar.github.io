@@ -5,11 +5,11 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
-<link href="../styling/" rel="prev"/>
-<link href="../troubleshooting/" rel="next"/>
+<link href="../eventlistener/" rel="prev"/>
+<link href="../glossary/" rel="next"/>
 <link href="../../assets/images/favicon.png" rel="icon"/>
 <meta content="mkdocs-1.4.2, mkdocs-material-9.1.4" name="generator"/>
-<title>Event Listeners - React Calendar Documentation</title>
+<title>Troubleshooting - React Calendar Documentation</title>
 <link href="../../assets/stylesheets/main.css" rel="stylesheet"/>
 <link href="../../assets/stylesheets/palette.css" rel="stylesheet"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
@@ -34,9 +34,6 @@
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
 <label class="md-overlay" for="__drawer"></label>
 <div data-md-component="skip">
-<a class="md-skip" href="#overview">
-          Skip to content
-        </a>
 </div>
 <div data-md-component="announce">
 </div>
@@ -58,7 +55,7 @@
 <div class="md-header__topic" data-md-component="header-topic">
 <span class="md-ellipsis">
             
-              Event Listeners
+              Troubleshooting
             
           </span>
 </div>
@@ -144,41 +141,14 @@
         Styling
       </a>
 </li>
-<li class="md-nav__item md-nav__item--active">
-<input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
-<label class="md-nav__link md-nav__link--active" for="__toc">
-          Event Listeners
-          <span class="md-nav__icon md-icon"></span>
-</label>
-<a class="md-nav__link md-nav__link--active" href="./">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../eventlistener/">
         Event Listeners
       </a>
-<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
-<label class="md-nav__title" for="__toc">
-<span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#overview">
-    Overview
-  </a>
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#props">
-    Props
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#conclusion">
-    Conclusion
-  </a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../troubleshooting/">
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
+<a class="md-nav__link md-nav__link--active" href="./">
         Troubleshooting
       </a>
 </li>
@@ -194,62 +164,38 @@
 </div>
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
-<h1>Event Listeners</h1>
-<p><link href="../../stylesheets/extra.css" rel="stylesheet"/></p>
-<h2 id="overview">Overview</h2>
-<p>This section will walk you through how to manipulate your calendar and perform <a href="https://www.codecademy.com/article/what-is-crud">CRUD</a> operations. Afterwards, you will be shown an example via code.</p>
-<div class="admonition info">
-<p class="admonition-title">Info</p>
-<p><a href="https://www.npmjs.com/package/react-calendar">React Calendar</a> is a powerful tool that can be used to create interactive and customizable calendars in your React applications. With React Calendar, you can manipulate the data and the calendar itself by using React props.</p>
-</div>
-<h2 id="props">Props</h2>
-<p><a href="https://www.npmjs.com/package/react-calendar">React Calendar</a> provides many props that you can use to customize its appearance and behavior. Here are some of the most commonly used props:</p>
-<ul>
-<li>
-<p><code>value</code>: This prop allows you to set the currently selected date in the calendar. You can use it to control the calendar from outside.</p>
-</li>
-<li>
-<p><code>view</code>: This prop allows you to set the initial view of the calendar (month, week, or day).</p>
-</li>
-<li>
-<p><code>minDate</code> and <code>maxDate</code>: These props allow you to set the minimum and maximum selectable dates in the calendar. You can use them to restrict the dates that users can select.</p>
-</li>
-<li>
-<p><code>onActiveStartDateChange</code>: This prop handles when the user navigates from one view to another using previous/next button. Note: This function will not be called when drilling up/down.</p>
-</li>
-<li>
-<p><code>onChange</code>: This prop handles when the user clicks an item (day on month view, month on year view and so on) on the most detailed view available.</p>
-</li>
-<li>
-<p><code>onViewChange</code>: This prop is called when the user navigates from one view to another using drill up button or by clicking a tile.</p>
-</li>
-<li>
-<p><code>onDrillUp</code>/<code>onDrillDown</code>: Function called when the user drills up by clicking drill up button.</p>
-</li>
-<li>
-<p><code>onClickDay</code>/<code>onClickDecade</code>/<code>onClickMonth</code>/<code>onClickWeekNumber</code>/<code>onClickYear</code>: This prop allows you to set a callback function that is called when a user clicks on a certain area in the calendar. The function receives two arguments: the value of the clicked area, and the original click event.</p>
-</li>
-<li>
-<p><code>onKeyDown</code>: This prop allows you to set a callback function that is called when a user presses a key while the calendar is in focus. The function receives two arguments: the key event, and the value of the currently focused date.</p>
-</li>
-</ul>
-<p>You can also use CSS to style the calendar as per your requirements. The calendar component exposes several class names that you can use to target specific elements in the calendar.</p>
-<h2 id="conclusion">Conclusion</h2>
-<p>As shown below, you can change the behaviour of your custom calendar by using props.
-You can read the selected date value from the calendar using the onClickDay prop. The same logic applies to using other props that listen for other events. </p>
-<div class="language-js highlight"><pre><span></span><code><span id="__span-0-1"><a href="#__codelineno-0-1" id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="k">import</span><span class="w"> </span><span class="nx">Calendar</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">'react-calendar'</span>
-</span><span id="__span-0-2"><a href="#__codelineno-0-2" id="__codelineno-0-2" name="__codelineno-0-2"></a>
-</span><span id="__span-0-3"><a href="#__codelineno-0-3" id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="kd">function</span><span class="w"> </span><span class="nx">App</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-0-4"><a href="#__codelineno-0-4" id="__codelineno-0-4" name="__codelineno-0-4"></a><span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="p">(</span>
-</span><span id="__span-0-5"><a href="#__codelineno-0-5" id="__codelineno-0-5" name="__codelineno-0-5"></a><span class="w">    </span><span class="o">&lt;</span><span class="nx">div</span><span class="w"> </span><span class="nx">className</span><span class="o">=</span><span class="s2">"App"</span><span class="o">&gt;</span>
-</span><span id="__span-0-6"><a href="#__codelineno-0-6" id="__codelineno-0-6" name="__codelineno-0-6"></a><span class="w">      </span><span class="o">&lt;</span><span class="nx">Calendar</span><span class="w"> </span><span class="nx">onClickDay</span><span class="o">=</span><span class="p">{(</span><span class="nx">value</span><span class="p">,</span><span class="w"> </span><span class="nx">event</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">alert</span><span class="p">(</span><span class="nx">value</span><span class="p">)}</span><span class="w"> </span><span class="nx">minDate</span><span class="o">=</span><span class="p">{</span><span class="ow">new</span><span class="w"> </span><span class="nb">Date</span><span class="p">()}</span><span class="w"> </span><span class="o">/&gt;</span>
-</span><span id="__span-0-7"><a href="#__codelineno-0-7" id="__codelineno-0-7" name="__codelineno-0-7"></a><span class="w">    </span><span class="o">&lt;</span><span class="err">/div&gt;</span>
-</span><span id="__span-0-8"><a href="#__codelineno-0-8" id="__codelineno-0-8" name="__codelineno-0-8"></a><span class="w">  </span><span class="p">);</span>
-</span></code></pre></div>
-<div class="admonition success">
-<p class="admonition-title">Success</p>
-<p>Now you should have a working onClick event listener which will alert the browser with the value you clicked inside the chosen day.</p>
-</div>
+<h1>Troubleshooting</h1>
+<table>
+<thead>
+<tr>
+<th><strong>Symptoms</strong></th>
+<th><strong>Probable Cause</strong></th>
+<th><strong>Action</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Unable to load the localhost page</td>
+<td>Your URL does not match your port number.</td>
+<td>Double check in the browser if the app is running on localhost 3000.</td>
+</tr>
+<tr>
+<td></td>
+<td>The port 3000 is already taken</td>
+<td>You can free a port using <code>killall node</code> command in the terminal.</td>
+</tr>
+<tr>
+<td>No module found</td>
+<td>Missing dependencies</td>
+<td>Installl the missing dependencies using <code>npm install dependency-name</code></td>
+</tr>
+<tr>
+<td>Conflicting dependencies</td>
+<td>Dependencies/Packages are incompatible. <code>npm install</code> gives error</td>
+<td>use <code>npm install --legacy-peer-deps</code> instead.</td>
+</tr>
+</tbody>
+</table>
 </article>
 </div>
 <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
@@ -261,7 +207,7 @@ You can read the selected date value from the calendar using the onClickDay prop
 </main>
 <footer class="md-footer">
 <nav aria-label="Footer" class="md-footer__inner md-grid">
-<a aria-label="Previous: Styling" class="md-footer__link md-footer__link--prev" href="../styling/" rel="prev">
+<a aria-label="Previous: Event Listeners" class="md-footer__link md-footer__link--prev" href="../eventlistener/" rel="prev">
 <div class="md-footer__button md-icon">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg>
 </div>
@@ -270,17 +216,17 @@ You can read the selected date value from the calendar using the onClickDay prop
 <span class="md-footer__direction">
                   Previous
                 </span>
-                Styling
+                Event Listeners
               </div>
 </div>
 </a>
-<a aria-label="Next: Troubleshooting" class="md-footer__link md-footer__link--next" href="../troubleshooting/" rel="next">
+<a aria-label="Next: Glossary" class="md-footer__link md-footer__link--next" href="../glossary/" rel="next">
 <div class="md-footer__title">
 <div class="md-ellipsis">
 <span class="md-footer__direction">
                   Next
                 </span>
-                Troubleshooting
+                Glossary
               </div>
 </div>
 <div class="md-footer__button md-icon">
