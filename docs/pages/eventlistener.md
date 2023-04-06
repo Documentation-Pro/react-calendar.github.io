@@ -89,7 +89,7 @@ function getTileContent({ date }) {
 }
 
 <Calendar tileContent={getTileContent} />```
-```
+
 
 
 ## Props Glossary
