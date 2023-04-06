@@ -260,12 +260,11 @@ Type: function | string | string[]</p>
 <p><code>tileContent</code>
 Type: function | React.ReactNode</p>
 <p>A function that gets called for each tile and returns a React node to render inside the tile. Alternatively, you can pass a React node to render inside all tiles.</p>
-<div class="language-js highlight"><pre><span></span><code><span id="__span-6-1"><a href="#__codelineno-6-1" id="__codelineno-6-1" name="__codelineno-6-1"></a><span class="kd">function</span><span class="w"> </span><span class="nx">getTileContent</span><span class="p">({</span><span class="w"> </span><span class="nx">date</span><span class="w"> </span><span class="p">})</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-6-2"><a href="#__codelineno-6-2" id="__codelineno-6-2" name="__codelineno-6-2"></a><span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="o">&lt;</span><span class="nx">div</span><span class="o">&gt;</span><span class="p">{</span><span class="nx">date</span><span class="p">.</span><span class="nx">getDate</span><span class="p">()}</span><span class="o">&lt;</span><span class="err">/div&gt;;</span>
-</span><span id="__span-6-3"><a href="#__codelineno-6-3" id="__codelineno-6-3" name="__codelineno-6-3"></a><span class="p">}</span>
-</span><span id="__span-6-4"><a href="#__codelineno-6-4" id="__codelineno-6-4" name="__codelineno-6-4"></a>
-</span><span id="__span-6-5"><a href="#__codelineno-6-5" id="__codelineno-6-5" name="__codelineno-6-5"></a><span class="o">&lt;</span><span class="nx">Calendar</span><span class="w"> </span><span class="nx">tileContent</span><span class="o">=</span><span class="p">{</span><span class="nx">getTileContent</span><span class="p">}</span><span class="w"> </span><span class="o">/&gt;</span><span class="sb">```</span>
-</span></code></pre></div>
+<p>```js
+function getTileContent({ date }) {
+  return <div>{date.getDate()}</div>;
+}</p>
+<p><calendar tilecontent="{getTileContent}"></calendar>```</p>
 <h2 id="props-glossary">Props Glossary</h2>
 <p><a href="https://www.npmjs.com/package/react-calendar">React Calendar</a> provides many props that you can use to customize its appearance and behavior. Here are some of the most commonly used props:</p>
 <ul>
