@@ -1,6 +1,9 @@
 /* .md-typeset code {
     color:#cbdc38;
 } */
-p,a {
+p {
     font-size: 1rem;
+}
+a{
+    font-size: .8rem;
 }
