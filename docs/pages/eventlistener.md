@@ -16,7 +16,7 @@ function App() {
       <Calendar onClickDay={(value, event) => alert(value)} minDate={new Date()} />
     </div>
   );
-
+}
 ```
 
 
