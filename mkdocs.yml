@@ -8,6 +8,9 @@ nav:
   - Troubleshooting: "pages/troubleshooting.md"
   - Glossary: "pages/glossary.md"
 
+repo_name: Documentation-Pro/react-calendar.github.io
+repo_url: https://github.com/Documentation-Pro/react-calendar.github.io
+
 theme:
   name: material
   nav_style: light
@@ -19,10 +22,9 @@ theme:
     text: Roboto
     code: Roboto Mono
   features:
-    # - navigation.tabs
     - navigation.sections
     - navigation.top
-    - toc.integrate
+    # - toc.integrate
     - announce.dismiss
     - content.action.edit
     - content.action.view
@@ -62,16 +64,14 @@ theme:
         icon: material/weather-night
         name: Switch to light mode
 
-  extra_css: 
-  - stylesheets/extra.css
-  repo_name: Documentation-Pro/react-calendar
-  repo_url: https://github.com/Documentation-Pro/react-calendar.github.io
+  extra_css:
+    - stylesheets/extra.css
 
   extra_javascript:
-  - https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/highlight.min.js
-  - https://cdnjs.cloudflare.com/ajax/libs/tablesort/5.2.1/tablesort.min.js
-  - javascripts/script.js
-  
+    - https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/highlight.min.js
+    - https://cdnjs.cloudflare.com/ajax/libs/tablesort/5.2.1/tablesort.min.js
+    - javascripts/script.js
+
   # Necessary for search to work properly
 include_search_page: false
 search_index_only: true
@@ -81,6 +81,8 @@ plugins:
   - search
 
 markdown_extensions:
+  - toc:
+      toc_depth: 3
   - attr_list
   - md_in_html
   - admonition
@@ -97,3 +99,7 @@ markdown_extensions:
   - pymdownx.keys
   - pymdownx.mark
   - pymdownx.tilde
+  - def_list
+  - pymdownx.tabbed:
+      alternate_style: true
+
