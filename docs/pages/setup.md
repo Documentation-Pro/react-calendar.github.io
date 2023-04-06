@@ -13,11 +13,13 @@ In this section I will walk you through the installation of [React Calendar](htt
  
 1. Create a new project directory
   > npx create-react-app my-app
-2. Open your terminal
+2. In Visual Studio Code, open your desired terminal in your current project directory
   > cd my-app
 3. Run the following commands in order:
   > npm start
 
+4. To install react-calendar
+```npm install react-calendar```
 
 ![image of react app](../images/reactexample.png "Upon installing react")
 4. In `my-app/src/App.js` import react-calendar
@@ -47,16 +49,7 @@ export default App;
 
 Everything you need to access/manipulate with React Calendar is going to be found on the Calendar Components props. You can find more about the interactivity and customization of your calendar here: <a href='../eventlistener/'>Event Listeners</a>, <a href='../styling/'>Styling</a>
 
-## Start React App
 
-  *Note: Replace "my-app" with whatever you'd like to name your app.*
-
-1. Change into your app directory by running the following command:
-  > cd my-app
-2. Start your React app by running the following command:
-  > npm start
-
-This should automatically open up your app in your systems default web browser.
 
 ## Conclusion
 

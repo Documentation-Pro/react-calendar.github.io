@@ -40,6 +40,7 @@ To use React Calendar in your project, you'll need to have the following pre-req
 ## Basic Usage
 Once you have React Calendar installed, you can use it in your [React](https://react.dev/) application by importing the Calendar component and rendering it in your component. If you are not familiar with React, this may be a difficult task at first, that's why we are going to show you. 😎 Here's an example of how to use React Calendar in a basic React component:
 
+
 ``` javaScript linenums="1"
     import React, { useState } from 'react';
     import Calendar from 'react-calendar';
