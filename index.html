@@ -149,6 +149,11 @@
   </a>
 </li>
 <li class="md-nav__item">
+<a class="md-nav__link" href="#-beginner-developers-who-need-to-set-up-a-react-calendar-for-a-personal-project">
+    - Beginner developers who need to set up a React Calendar for a personal project.
+  </a>
+</li>
+<li class="md-nav__item">
 <a class="md-nav__link" href="#getting-started">
     Getting Started
   </a>
@@ -233,14 +238,21 @@
 <p>React Calendar is a lightweight calendar package designed for use in React applications. It provides a simple and customizable way to display calendars and schedule events. It is currently being managed by a developer under the name Wojciech Maj. The developer has made this amazing tool light and fast, extremely customizable, work with any language, rock-solid/bug-free, and best of all open source! (forever)</p>
 <h2 id="intended-users">Intended Users</h2>
 <p>Our documentation is targeted towards the following users:</p>
+<h2 id="-beginner-developers-who-need-to-set-up-a-react-calendar-for-a-personal-project">- Beginner developers who need to set up a React Calendar for a personal project.</h2>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>Prerequisites:</p>
 <ul>
-<li>Beginner developers who need to set up a React Calendar for a personal project.</li>
+<li>Basic understanding of Command Line Interface.</li>
+<li>Basic understanding of Visual Studio Code.</li>
+<li>Basic proficiency of Node package manager.</li>
 </ul>
+</div>
 <h2 id="getting-started">Getting Started</h2>
 <p>To use React Calendar in your project, you'll need to have the following pre-requisites installed:</p>
 <blockquote>
-<p>React</p>
-<p>npm</p>
+<p><a href="https://nodejs.org/en">Node JS</a> Node Environment is required to use React and React Calendar</p>
+<p><a href="https://code.visualstudio.com/">Visual Studio Code</a> Working with documentation requires a text editor, please install VS Code or you can work with your favorite text editor</p>
 </blockquote>
 <figure>
 <p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="100%" href="https://camo.githubusercontent.com/366e44bda8cd8313fa3043f9ad8c50a205696527268fb410e22db006a917afa9/68747470733a2f2f70726f6a656374732e776f6a74656b6d616a2e706c2f72656163742d63616c656e6461722f72656163742d63616c656e6461722e6a7067"><img alt="React Calendar" src="https://camo.githubusercontent.com/366e44bda8cd8313fa3043f9ad8c50a205696527268fb410e22db006a917afa9/68747470733a2f2f70726f6a656374732e776f6a74656b6d616a2e706c2f72656163742d63616c656e6461722f72656163742d63616c656e6461722e6a7067" width="300"/></a>
@@ -260,23 +272,25 @@
 <span class="normal"><a href="#__codelineno-0-9"> 9</a></span>
 <span class="normal"><a href="#__codelineno-0-10">10</a></span>
 <span class="normal"><a href="#__codelineno-0-11">11</a></span>
-<span class="normal"><a href="#__codelineno-0-12">12</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="w">    </span><span class="k">import</span><span class="w"> </span><span class="nx">React</span><span class="p">,</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">useState</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">'react'</span><span class="p">;</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="w">    </span><span class="k">import</span><span class="w"> </span><span class="nx">Calendar</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">'react-calendar'</span><span class="p">;</span>
+<span class="normal"><a href="#__codelineno-0-12">12</a></span>
+<span class="normal"><a href="#__codelineno-0-13">13</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="k">import</span><span class="w"> </span><span class="nx">React</span><span class="p">,</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">useState</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">'react'</span><span class="p">;</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="k">import</span><span class="w"> </span><span class="nx">Calendar</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">'react-calendar'</span><span class="p">;</span>
 </span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3"></a>
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4"></a><span class="w">    </span><span class="kd">function</span><span class="w"> </span><span class="nx">MyApp</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4"></a><span class="kd">function</span><span class="w"> </span><span class="nx">MyApp</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
 </span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5"></a><span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="p">[</span><span class="nx">value</span><span class="p">,</span><span class="w"> </span><span class="nx">onChange</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">useState</span><span class="p">(</span><span class="ow">new</span><span class="w"> </span><span class="nb">Date</span><span class="p">());</span>
 </span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6"></a>
 </span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="p">(</span>
 </span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8"></a><span class="w">        </span><span class="o">&lt;</span><span class="nx">div</span><span class="o">&gt;</span>
-</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9"></a><span class="w">        </span><span class="o">&lt;</span><span class="nx">Calendar</span><span class="w"> </span><span class="nx">onChange</span><span class="o">=</span><span class="p">{</span><span class="nx">onChange</span><span class="p">}</span><span class="w"> </span><span class="nx">value</span><span class="o">=</span><span class="p">{</span><span class="nx">value</span><span class="p">}</span><span class="w"> </span><span class="o">/&gt;</span>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9"></a><span class="w">            </span><span class="o">&lt;</span><span class="nx">Calendar</span><span class="w"> </span><span class="nx">onChange</span><span class="o">=</span><span class="p">{</span><span class="nx">onChange</span><span class="p">}</span><span class="w"> </span><span class="nx">value</span><span class="o">=</span><span class="p">{</span><span class="nx">value</span><span class="p">}</span><span class="w"> </span><span class="o">/&gt;</span>
 </span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10"></a><span class="w">        </span><span class="o">&lt;</span><span class="err">/div&gt;</span>
 </span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11"></a><span class="w">    </span><span class="p">);</span>
-</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12"></a><span class="p">}</span>
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13"></a><span class="k">export</span><span class="w"> </span><span class="k">default</span><span class="w"> </span><span class="nx">MyApp</span><span class="p">;</span>
 </span></code></pre></div></td></tr></table></div>
-<p>So in this example, we are importing the Calendar component from the react-calendar package and using the useState hook to manage the state of the selected date. </p>
+<p>So in this example, we are importing the Calendar component from the react-calendar package and using the useState hook to manage the state of the selected date. State manages the variables binded to a react component.</p>
 <p>If you're not familiar with <a href="https://react.dev/">React</a> hooks, you can find out more about them <a href="https://react.dev/learn#using-hooks">here</a></p>
 <p>We then render the Calendar component with the onChange and value props to enable date selection and update the selected date state.</p>
-<p>I should mention that this is just a basic example of how to use <a href="https://www.npmjs.com/package/react-calendar">React Calendar</a>, and that you can definitely customize it to suit your needs by passing additional props and styles to the Calendar component as needed.</p>
+<p>This is just a basic example of how to use <a href="https://www.npmjs.com/package/react-calendar">React Calendar</a>, and that you can definitely customize it to suit your needs by passing additional props and styles to the Calendar component as needed.</p>
 <h2 id="advanced-usage">Advanced Usage</h2>
 <p>Once you've gotten the hang of things mentioned above in the basic usage section, you might be interested in getting more advanced with <a href="https://www.npmjs.com/package/react-calendar">React Calendar</a>.</p>
 <p>Thankfully, <a href="https://www.npmjs.com/package/react-calendar">React Calendar</a> provides many props and options for customization. Here are some common props that you can use to customize your calendar:</p>
@@ -286,6 +300,7 @@
 <p>You can find a list of all of the available props <a href="https://www.npmjs.com/package/react-calendar">here</a></p>
 </div>
 <h3 id="props">Props</h3>
+<p>Props are the arguements passed to a react component. Props determines the behavior of a component.</p>
 <ul>
 <li><code>value</code> : sets the selected date.</li>
 <li><code>onChange</code> : a function that is called when the date selection changes.</li>
@@ -319,7 +334,7 @@
 </div>
 <h1 id="conclusion">Conclusion</h1>
 <p>We hope you find our React Calendar documentation helpful! If you have any questions or feedback, please do not hesitate to contact us.</p>
-<h2 id="contributers">contributers</h2>
+<h2 id="contributers">Contributers</h2>
 <blockquote>
 <p>Jack Boeri - jboeri@my.bcit.ca</p>
 <p>Paarth Dhammi - pdhammi@my.bcit.ca</p>

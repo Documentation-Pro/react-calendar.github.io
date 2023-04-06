@@ -170,8 +170,8 @@
   </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#props-glossary">
-    Props Glossary
+<a class="md-nav__link" href="#list-of-props">
+    List of props
   </a>
 </li>
 <li class="md-nav__item">
@@ -219,16 +219,17 @@
 </span><span id="__span-0-10"><a href="#__codelineno-0-10" id="__codelineno-0-10" name="__codelineno-0-10"></a><span class="k">export</span><span class="w"> </span><span class="k">default</span><span class="w"> </span><span class="nx">App</span><span class="p">;</span>
 </span></code></pre></div>
 <h2 id="props">Props</h2>
-<p>React Calendar comes with several props that allow you to customize its appearance and behavior.</p>
+<p>React Calendar comes with several props that allow you to customize its appearance and behavior. Props are the arguements we can pass to a react component.</p>
 <p><code>onChange</code></p>
 <p>Type: function</p>
-<p>A function that gets called every time the user selects a new date. The function receives the selected date as an argument.</p>
+<p>A function that gets called every time the user selects a new date. The function receives the selected date as an argument.
+<code>handleDateChange</code> would be defined outside of your App function. The line <code>&lt;Calendar onChange={handleDateChange} /&gt;</code> would be called inside the return statement of the App component.
 <div class="language-js highlight"><pre><span></span><code><span id="__span-1-1"><a href="#__codelineno-1-1" id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="kd">function</span><span class="w"> </span><span class="nx">handleDateChange</span><span class="p">(</span><span class="nx">date</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
 </span><span id="__span-1-2"><a href="#__codelineno-1-2" id="__codelineno-1-2" name="__codelineno-1-2"></a><span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="sb">`Selected date: </span><span class="si">${</span><span class="nx">date</span><span class="si">}</span><span class="sb">`</span><span class="p">);</span>
 </span><span id="__span-1-3"><a href="#__codelineno-1-3" id="__codelineno-1-3" name="__codelineno-1-3"></a><span class="p">}</span>
 </span><span id="__span-1-4"><a href="#__codelineno-1-4" id="__codelineno-1-4" name="__codelineno-1-4"></a>
 </span><span id="__span-1-5"><a href="#__codelineno-1-5" id="__codelineno-1-5" name="__codelineno-1-5"></a><span class="o">&lt;</span><span class="nx">Calendar</span><span class="w"> </span><span class="nx">onChange</span><span class="o">=</span><span class="p">{</span><span class="nx">handleDateChange</span><span class="p">}</span><span class="w"> </span><span class="o">/&gt;</span>
-</span></code></pre></div>
+</span></code></pre></div></p>
 <p><code>value</code>
 Type: Date</p>
 <blockquote>
@@ -260,12 +261,13 @@ Type: function | string | string[]</p>
 <p><code>tileContent</code>
 Type: function | React.ReactNode</p>
 <p>A function that gets called for each tile and returns a React node to render inside the tile. Alternatively, you can pass a React node to render inside all tiles.</p>
-<p>```js
-function getTileContent({ date }) {
-  return <div>{date.getDate()}</div>;
-}</p>
-<p><calendar tilecontent="{getTileContent}"></calendar>```</p>
-<h2 id="props-glossary">Props Glossary</h2>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-6-1"><a href="#__codelineno-6-1" id="__codelineno-6-1" name="__codelineno-6-1"></a><span class="kd">function</span><span class="w"> </span><span class="nx">getTileContent</span><span class="p">({</span><span class="w"> </span><span class="nx">date</span><span class="w"> </span><span class="p">})</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-6-2"><a href="#__codelineno-6-2" id="__codelineno-6-2" name="__codelineno-6-2"></a><span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="o">&lt;</span><span class="nx">div</span><span class="o">&gt;</span><span class="p">{</span><span class="nx">date</span><span class="p">.</span><span class="nx">getDate</span><span class="p">()}</span><span class="o">&lt;</span><span class="err">/div&gt;;</span>
+</span><span id="__span-6-3"><a href="#__codelineno-6-3" id="__codelineno-6-3" name="__codelineno-6-3"></a><span class="p">}</span>
+</span><span id="__span-6-4"><a href="#__codelineno-6-4" id="__codelineno-6-4" name="__codelineno-6-4"></a>
+</span><span id="__span-6-5"><a href="#__codelineno-6-5" id="__codelineno-6-5" name="__codelineno-6-5"></a><span class="o">&lt;</span><span class="nx">Calendar</span><span class="w"> </span><span class="nx">tileContent</span><span class="o">=</span><span class="p">{</span><span class="nx">getTileContent</span><span class="p">}</span><span class="w"> </span><span class="o">/&gt;</span>
+</span></code></pre></div>
+<h2 id="list-of-props">List of props</h2>
 <p><a href="https://www.npmjs.com/package/react-calendar">React Calendar</a> provides many props that you can use to customize its appearance and behavior. Here are some of the most commonly used props:</p>
 <ul>
 <li>
@@ -314,7 +316,7 @@ function getTileContent({ date }) {
 You can read the selected date value from the calendar using the onClickDay prop. The same logic applies to using other props that listen for other events. </p>
 <div class="admonition success">
 <p class="admonition-title">Success</p>
-<p>Now you should have a working onClick event listener which will alert the browser with the value you clicked inside the chosen day.</p>
+<p>Now you should have a react calendar component with event listeners attached to it!</p>
 </div>
 </article>
 </div>
