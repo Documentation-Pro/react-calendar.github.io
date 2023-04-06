@@ -59,6 +59,6 @@ Everything you need to access/manipulate with React Calendar is going to be foun
     Indicates additional information or tips. -->
 
 !!! success
-    Indicates what success looks like.
+    You have successfully intergrated react calendar with react application.
 
   You should now have a working React Calendar in your React Application. Great work!
