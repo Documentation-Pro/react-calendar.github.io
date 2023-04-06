@@ -17,9 +17,8 @@ In this section I will walk you through the installation of [React Calendar](htt
   > cd my-app
 3. Run the following commands in order:
   > npm start
-
 4. To install react-calendar
-```npm install react-calendar```
+  > npm install react-calendar
 
 ![image of react app](../images/reactexample.png "Upon installing react")
 4. In `my-app/src/App.js` import react-calendar
