@@ -3,6 +3,13 @@
 ## Overview
 Having a clear project structure is essential to collaborate on a web application. Also, it is important as it helps developers create new files following the existing conventions and helps them edit the existing files.
 
+!!! warning
+    Do not run these commands if you already have a project structure
+
+
+!!! info
+    This is a reference page for developers, we have already created the app on installing react calendar page.
+
 
 
 We can create a new react application using the following command
@@ -13,7 +20,7 @@ npx create-react-app calendar
 React provide a solid structure to work upon. The default file structure after creating a new react application would look like the below:
 
 ```
-calendar-test
+calendar
 ├── package.json
 ├── public
 │   ├── favicon.ico
@@ -34,7 +41,7 @@ calendar-test
     └── setupTests.js
 ```
 
-Furture there are other ways to struture the app
+There are other ways to struture the app
 
 !!! Info
     Grouping by features or routes

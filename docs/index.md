@@ -21,14 +21,22 @@ React Calendar is a lightweight calendar package designed for use in React appli
 Our documentation is targeted towards the following users:
 
 - Beginner developers who need to set up a React Calendar for a personal project.
+- 
+!!! Info
+    Prerequisites:
+
+    - Basic understanding of Command Line Interface.
+    - Basic understanding of Visual Studio Code.
+    - Basic proficiency of Node package manager.
+
 
 ## Getting Started
 
 To use React Calendar in your project, you'll need to have the following pre-requisites installed:
 
- > React
+ > [Node JS](https://nodejs.org/en) Node Environment is required to use React and React Calendar
 
- > npm
+ > [Visual Studio Code](https://code.visualstudio.com/) Working with documentation requires a text editor, please install VS Code or you can work with your favorite text editor
 
 
 <figure markdown>
@@ -42,27 +50,28 @@ Once you have React Calendar installed, you can use it in your [React](https://r
 
 
 ``` javaScript linenums="1"
-    import React, { useState } from 'react';
-    import Calendar from 'react-calendar';
+import React, { useState } from 'react';
+import Calendar from 'react-calendar';
 
-    function MyApp() {
+function MyApp() {
     const [value, onChange] = useState(new Date());
 
     return (
         <div>
-        <Calendar onChange={onChange} value={value} />
+            <Calendar onChange={onChange} value={value} />
         </div>
     );
-    }
+}
+export default MyApp;
 ```
 
-So in this example, we are importing the Calendar component from the react-calendar package and using the useState hook to manage the state of the selected date. 
+So in this example, we are importing the Calendar component from the react-calendar package and using the useState hook to manage the state of the selected date. State manages the variables binded to a react component.
 
 If you're not familiar with [React](https://react.dev/) hooks, you can find out more about them [here](https://react.dev/learn#using-hooks)
 
 We then render the Calendar component with the onChange and value props to enable date selection and update the selected date state.
 
-I should mention that this is just a basic example of how to use [React Calendar](https://www.npmjs.com/package/react-calendar), and that you can definitely customize it to suit your needs by passing additional props and styles to the Calendar component as needed.
+This is just a basic example of how to use [React Calendar](https://www.npmjs.com/package/react-calendar), and that you can definitely customize it to suit your needs by passing additional props and styles to the Calendar component as needed.
 
 ## Advanced Usage
 
@@ -76,6 +85,9 @@ Thankfully, [React Calendar](https://www.npmjs.com/package/react-calendar) provi
     You can find a list of all of the available props [here](https://www.npmjs.com/package/react-calendar)
 
 ### Props
+
+Props are the arguements passed to a react component. Props determines the behavior of a component.
+
 
 * `value` : sets the selected date.
 * `onChange` : a function that is called when the date selection changes.
@@ -113,7 +125,7 @@ In the documentation you will see a series of indicator messages with different 
 
 We hope you find our React Calendar documentation helpful! If you have any questions or feedback, please do not hesitate to contact us.
 
-## contributers
+## Contributers
 
 > Jack Boeri - jboeri@my.bcit.ca
 

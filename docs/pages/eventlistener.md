@@ -23,14 +23,14 @@ export default App;
 
 ## Props
 
-React Calendar comes with several props that allow you to customize its appearance and behavior.
+React Calendar comes with several props that allow you to customize its appearance and behavior. Props are the arguements we can pass to a react component.
 
 ```onChange```
 
 Type: function
 
 A function that gets called every time the user selects a new date. The function receives the selected date as an argument.
-
+```handleDateChange``` would be defined outside of your App function. The line ```<Calendar onChange={handleDateChange} />``` would be called inside the return statement of the App component.
 ```js
 function handleDateChange(date) {
   console.log(`Selected date: ${date}`);
@@ -88,11 +88,12 @@ function getTileContent({ date }) {
   return <div>{date.getDate()}</div>;
 }
 
-<Calendar tileContent={getTileContent} />```
+<Calendar tileContent={getTileContent} />
+```
 
 
 
-## Props Glossary
+## List of props 
 [React Calendar](https://www.npmjs.com/package/react-calendar) provides many props that you can use to customize its appearance and behavior. Here are some of the most commonly used props:
 
 - `value` : This prop allows you to set the currently selected date in the calendar. You can use it to control the calendar from outside.
@@ -133,4 +134,4 @@ You can read the selected date value from the calendar using the onClickDay prop
 
 
 !!! success
-    Now you should have a working onClick event listener which will alert the browser with the value you clicked inside the chosen day.
+    Now you should have a react calendar component with event listeners attached to it!

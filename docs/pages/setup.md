@@ -1,7 +1,7 @@
 <link rel="stylesheet" href="../../stylesheets/extra.css" />
 
 ## Overview
-In this section I will walk you through the installation of [React Calendar](https://www.npmjs.com/package/react-calendar) which involves creating a new project directory, installing [React 16.3](https://react.dev/) or later, and importing the Calendar component in the App.js file. 
+In this section we will walk through the installation of [React Calendar](https://www.npmjs.com/package/react-calendar) which involves creating a new project directory, installing [React 16.3](https://react.dev/) or later, and importing the Calendar component in the App.js file. 
 
 ## Installation Steps for React Calendar
 
@@ -10,6 +10,8 @@ In this section I will walk you through the installation of [React Calendar](htt
 
 [React Calendar](https://www.npmjs.com/package/react-calendar) uses modern web technologies. That's why it's so fast, lightweight and easy to style. This, however, comes at a cost of supporting only modern browsers.
  
+!!! info
+    Please be patient as installing react on your system may take a few minutes
  
 1. Create a new project directory
   > npx create-react-app my-app
@@ -25,7 +27,7 @@ In this section I will walk you through the installation of [React Calendar](htt
 ```js
 import Calendar from 'react-calendar'
 ```
-5. return the Calendar component in your App function
+5. Replace the return code block of the App function with code below 
 ```js
 return (
     <Calendar />
