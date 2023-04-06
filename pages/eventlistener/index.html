@@ -170,13 +170,13 @@
   </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#conclusion">
-    Conclusion
+<a class="md-nav__link" href="#props-glossary">
+    Props Glossary
   </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#props_1">
-    Props
+<a class="md-nav__link" href="#conclusion">
+    Conclusion
   </a>
 </li>
 </ul>
@@ -202,58 +202,11 @@
 <h1>Event Listeners</h1>
 <p><link href="../../stylesheets/extra.css" rel="stylesheet"/></p>
 <h2 id="overview">Overview</h2>
-<p>This section will walk you through how to manipulate your calendar and perform <a href="https://www.codecademy.com/article/what-is-crud">CRUD</a> operations. Afterwards, you will be shown an example via code.</p>
+<p>This section will walk you through how to manipulate your calendar with code examples.</p>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
 <p><a href="https://www.npmjs.com/package/react-calendar">React Calendar</a> is a powerful tool that can be used to create interactive and customizable calendars in your React applications. With React Calendar, you can manipulate the data and the calendar itself by using React props.</p>
 </div>
-<h2 id="props">Props</h2>
-<p><a href="https://www.npmjs.com/package/react-calendar">React Calendar</a> provides many props that you can use to customize its appearance and behavior. Here are some of the most commonly used props:</p>
-<ul>
-<li>
-<p><code>value</code> : This prop allows you to set the currently selected date in the calendar. You can use it to control the calendar from outside.</p>
-</li>
-<li>
-<p><code>view</code> : This prop allows you to set the initial view of the calendar (month, week, or day).</p>
-</li>
-<li>
-<p><code>calendarType</code> : sets the calendar type (e.g., US or ISO 8601).</p>
-</li>
-<li>
-<p><code>minDate</code> and <code>maxDate</code> : These props allow you to set the minimum and maximum selectable dates in the calendar. You can use them to restrict the dates that users can select.</p>
-</li>
-<li>
-<p><code>onActiveStartDateChange</code> : This prop handles when the user navigates from one view to another using previous/next button. Note: This function will not be called when drilling up/down.</p>
-</li>
-<li>
-<p><code>onChange</code> : This prop handles when the user clicks an item (day on month view, month on year view and so on) on the most detailed view available.</p>
-</li>
-<li>
-<p><code>onViewChange</code> : This prop is called when the user navigates from one view to another using drill up button or by clicking a tile.</p>
-</li>
-<li>
-<p><code>onDrillUp</code>/<code>onDrillDown</code> : Function called when the user drills up by clicking drill up button.</p>
-</li>
-<li>
-<p><code>showNavigation</code> : shows or hides the navigation buttons.</p>
-</li>
-<li>
-<p><code>tileClassName</code> : a function that is called for each tile to set the class name.</p>
-</li>
-<li>
-<p><code>tileContent</code> : a function that is called for each tile to set the content.</p>
-</li>
-<li>
-<p><code>onClickDay</code>/<code>onClickDecade</code>/<code>onClickMonth</code>/<code>onClickWeekNumber</code>/<code>onClickYear</code> : This prop allows you to set a callback function that is called when a user clicks on a certain area in the calendar. The function receives two arguments: the value of the clicked area, and the original click event.</p>
-</li>
-<li>
-<p><code>onKeyDown</code> : This prop allows you to set a callback function that is called when a user presses a key while the calendar is in focus. The function receives two arguments: the key event, and the value of the currently focused date.</p>
-</li>
-</ul>
-<p>You can also use CSS to style the calendar as per your requirements. The calendar component exposes several class names that you can use to target specific elements in the calendar.</p>
-<h2 id="conclusion">Conclusion</h2>
-<p>As shown below, you can change the behaviour of your custom calendar by using props.
-You can read the selected date value from the calendar using the onClickDay prop. The same logic applies to using other props that listen for other events. </p>
 <div class="language-js highlight"><pre><span></span><code><span id="__span-0-1"><a href="#__codelineno-0-1" id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="k">import</span><span class="w"> </span><span class="nx">Calendar</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">'react-calendar'</span>
 </span><span id="__span-0-2"><a href="#__codelineno-0-2" id="__codelineno-0-2" name="__codelineno-0-2"></a>
 </span><span id="__span-0-3"><a href="#__codelineno-0-3" id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="kd">function</span><span class="w"> </span><span class="nx">App</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
@@ -263,7 +216,7 @@ You can read the selected date value from the calendar using the onClickDay prop
 </span><span id="__span-0-7"><a href="#__codelineno-0-7" id="__codelineno-0-7" name="__codelineno-0-7"></a><span class="w">    </span><span class="o">&lt;</span><span class="err">/div&gt;</span>
 </span><span id="__span-0-8"><a href="#__codelineno-0-8" id="__codelineno-0-8" name="__codelineno-0-8"></a><span class="w">  </span><span class="p">);</span>
 </span></code></pre></div>
-<h2 id="props_1">Props</h2>
+<h2 id="props">Props</h2>
 <p>React Calendar comes with several props that allow you to customize its appearance and behavior.</p>
 <p><code>onChange</code></p>
 <p>Type: function</p>
@@ -311,6 +264,53 @@ Type: function | React.ReactNode</p>
 </span><span id="__span-6-4"><a href="#__codelineno-6-4" id="__codelineno-6-4" name="__codelineno-6-4"></a>
 </span><span id="__span-6-5"><a href="#__codelineno-6-5" id="__codelineno-6-5" name="__codelineno-6-5"></a><span class="o">&lt;</span><span class="nx">Calendar</span><span class="w"> </span><span class="nx">tileContent</span><span class="o">=</span><span class="p">{</span><span class="nx">getTileContent</span><span class="p">}</span><span class="w"> </span><span class="o">/&gt;</span><span class="sb">```</span>
 </span></code></pre></div>
+<h2 id="props-glossary">Props Glossary</h2>
+<p><a href="https://www.npmjs.com/package/react-calendar">React Calendar</a> provides many props that you can use to customize its appearance and behavior. Here are some of the most commonly used props:</p>
+<ul>
+<li>
+<p><code>value</code> : This prop allows you to set the currently selected date in the calendar. You can use it to control the calendar from outside.</p>
+</li>
+<li>
+<p><code>view</code> : This prop allows you to set the initial view of the calendar (month, week, or day).</p>
+</li>
+<li>
+<p><code>calendarType</code> : sets the calendar type (e.g., US or ISO 8601).</p>
+</li>
+<li>
+<p><code>minDate</code> and <code>maxDate</code> : These props allow you to set the minimum and maximum selectable dates in the calendar. You can use them to restrict the dates that users can select.</p>
+</li>
+<li>
+<p><code>onActiveStartDateChange</code> : This prop handles when the user navigates from one view to another using previous/next button. Note: This function will not be called when drilling up/down.</p>
+</li>
+<li>
+<p><code>onChange</code> : This prop handles when the user clicks an item (day on month view, month on year view and so on) on the most detailed view available.</p>
+</li>
+<li>
+<p><code>onViewChange</code> : This prop is called when the user navigates from one view to another using drill up button or by clicking a tile.</p>
+</li>
+<li>
+<p><code>onDrillUp</code>/<code>onDrillDown</code> : Function called when the user drills up by clicking drill up button.</p>
+</li>
+<li>
+<p><code>showNavigation</code> : shows or hides the navigation buttons.</p>
+</li>
+<li>
+<p><code>tileClassName</code> : a function that is called for each tile to set the class name.</p>
+</li>
+<li>
+<p><code>tileContent</code> : a function that is called for each tile to set the content.</p>
+</li>
+<li>
+<p><code>onClickDay</code>/<code>onClickDecade</code>/<code>onClickMonth</code>/<code>onClickWeekNumber</code>/<code>onClickYear</code> : This prop allows you to set a callback function that is called when a user clicks on a certain area in the calendar. The function receives two arguments: the value of the clicked area, and the original click event.</p>
+</li>
+<li>
+<p><code>onKeyDown</code> : This prop allows you to set a callback function that is called when a user presses a key while the calendar is in focus. The function receives two arguments: the key event, and the value of the currently focused date.</p>
+</li>
+</ul>
+<p>You can also use CSS to style the calendar as per your requirements. The calendar component exposes several class names that you can use to target specific elements in the calendar.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>As shown below, you can change the behaviour of your custom calendar by using props.
+You can read the selected date value from the calendar using the onClickDay prop. The same logic applies to using other props that listen for other events. </p>
 <div class="admonition success">
 <p class="admonition-title">Success</p>
 <p>Now you should have a working onClick event listener which will alert the browser with the value you clicked inside the chosen day.</p>
