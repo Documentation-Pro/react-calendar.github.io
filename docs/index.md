@@ -20,8 +20,8 @@ React Calendar is a lightweight calendar package designed for use in React appli
 
 Our documentation is targeted towards the following users:
 
-- Beginner developers who need to set up a React Calendar for a personal project.
-- 
+Beginner developers who need to set up a React Calendar for a personal project.
+  
 !!! Info
     Prerequisites:
 
