@@ -175,8 +175,18 @@
   </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#customizations">
-    Customizations
+<a class="md-nav__link" href="#grouping-by-features-or-routes">
+    Grouping by features or routes
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#grouping-by-file-type">
+    Grouping by file type
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#creating-a-custom-project-structure">
+    Creating a custom project structure
   </a>
 </li>
 <li class="md-nav__item">
@@ -227,8 +237,18 @@
   </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#customizations">
-    Customizations
+<a class="md-nav__link" href="#grouping-by-features-or-routes">
+    Grouping by features or routes
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#grouping-by-file-type">
+    Grouping by file type
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#creating-a-custom-project-structure">
+    Creating a custom project structure
   </a>
 </li>
 <li class="md-nav__item">
@@ -288,11 +308,14 @@ React provide a solid structure to work upon. The default file structure after c
 </span><span id="__span-1-18"><a href="#__codelineno-1-18" id="__codelineno-1-18" name="__codelineno-1-18"></a>    ├── reportWebVitals.js
 </span><span id="__span-1-19"><a href="#__codelineno-1-19" id="__codelineno-1-19" name="__codelineno-1-19"></a>    └── setupTests.js
 </span></code></pre></div>
-<p>There are other ways to struture the app</p>
-<div class="admonition info">
-<p class="admonition-title">Info</p>
-<p>Grouping by features or routes</p>
-</div>
+<p>Here are a few ways to struture a react application.</p>
+<pre class="mermaid"><code>graph LR
+  A[Project Structure] --&gt; B[Grouping by features or routes ];
+  A --&gt; C[Grouping by file type]
+  A --&gt; D[Custom Project Structure]</code></pre>
+<h2 id="grouping-by-features-or-routes">Grouping by features or routes</h2>
+<p>We can see in the project tree below that all the files are separated based on the feature or route.
+The example below shows three different routes for the application: common, feed, and profile. So the files are separated based on the route they belong to.</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a href="#__codelineno-2-1" id="__codelineno-2-1" name="__codelineno-2-1"></a>common/
 </span><span id="__span-2-2"><a href="#__codelineno-2-2" id="__codelineno-2-2" name="__codelineno-2-2"></a>  Avatar.js
 </span><span id="__span-2-3"><a href="#__codelineno-2-3" id="__codelineno-2-3" name="__codelineno-2-3"></a>  Avatar.css
@@ -312,10 +335,8 @@ React provide a solid structure to work upon. The default file structure after c
 </span><span id="__span-2-17"><a href="#__codelineno-2-17" id="__codelineno-2-17" name="__codelineno-2-17"></a>  ProfileHeader.css
 </span><span id="__span-2-18"><a href="#__codelineno-2-18" id="__codelineno-2-18" name="__codelineno-2-18"></a>  ProfileAPI.js
 </span></code></pre></div>
-<div class="admonition info">
-<p class="admonition-title">Info</p>
-<p>Grouping by file type</p>
-</div>
+<h2 id="grouping-by-file-type">Grouping by file type</h2>
+<p>In the project tree below, we can spot that the files interacting with API are in a different directory, and the files for components are in a separate folders.</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-3-1"><a href="#__codelineno-3-1" id="__codelineno-3-1" name="__codelineno-3-1"></a>api/
 </span><span id="__span-3-2"><a href="#__codelineno-3-2" id="__codelineno-3-2" name="__codelineno-3-2"></a>  APIUtils.js
 </span><span id="__span-3-3"><a href="#__codelineno-3-3" id="__codelineno-3-3" name="__codelineno-3-3"></a>  APIUtils.test.js
@@ -332,7 +353,7 @@ React provide a solid structure to work upon. The default file structure after c
 </span><span id="__span-3-14"><a href="#__codelineno-3-14" id="__codelineno-3-14" name="__codelineno-3-14"></a>  ProfileHeader.js
 </span><span id="__span-3-15"><a href="#__codelineno-3-15" id="__codelineno-3-15" name="__codelineno-3-15"></a>  ProfileHeader.css
 </span></code></pre></div>
-<h2 id="customizations">Customizations</h2>
+<h2 id="creating-a-custom-project-structure">Creating a custom project structure</h2>
 <p>React allows developers to create a custom project structure, allowing them to structure their code
 as they wish. However, it is recommended to have minimal folder nesting while structuring your code.</p>
 <p>List of some useful commands to help you create a custom project structure.</p>
