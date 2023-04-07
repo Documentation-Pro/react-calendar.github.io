@@ -1,6 +1,6 @@
-<link rel="stylesheet" href="../stylesheets/extra.css" />
+<link rel="stylesheet" href="./stylesheets/extra.css" />
 
-<link rel="stylesheet" href="../stylesheets/extra.css" />
+<!-- <link rel="stylesheet" href="../stylesheets/extra.css" /> -->
 
 # React Calendar Documentation: Installation, Usage, and Customization Guide
 

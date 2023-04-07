@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="../../stylesheets/extra.css" />
 
 | **Symptoms** | **Probable Cause** | **Action** |
 | ------------ | ------------------ | ---------- |

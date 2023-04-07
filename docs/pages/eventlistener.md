@@ -122,7 +122,6 @@ function getTileContent({ date }) {
 
 - `onKeyDown` : This prop allows you to set a callback function that is called when a user presses a key while the calendar is in focus. The function receives two arguments: the key event, and the value of the currently focused date.
 
-You can also use CSS to style the calendar as per your requirements. The calendar component exposes several class names that you can use to target specific elements in the calendar.
 
 ## Conclusion
 As shown below, you can change the behaviour of your custom calendar by using props.
