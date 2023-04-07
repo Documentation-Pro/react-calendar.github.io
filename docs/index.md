@@ -17,7 +17,7 @@ Want to try a live demo? Visit [Live Demo](https://projects.wojtekmaj.pl/react-c
 
 ## What is React Calendar? 📆
 
-React Calendar is a lightweight calendar package designed for use in React applications. It provides a simple and customizable way to display calendars and schedule events. It is currently being managed by a developer under the name Wojciech Maj. The developer has made this incredible tool light and fast, extremely customizable, works with any language, is rock-solid/bug-free, and, best of all, open source! (Forever)
+React Calendar is a lightweight calendar package designed for use in React applications. It provides a simple and customizable way to display calendars and schedule events. It is currently being managed by a developer under the name **Wojciech Maj**. The developer has made this incredible tool light and fast, extremely customizable, works with any language, is rock-solid/bug-free, and, best of all, open source! (Forever)
 
 
 ## Intended Users
