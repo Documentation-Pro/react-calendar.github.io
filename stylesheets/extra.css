@@ -58,3 +58,33 @@ h6 {
 .md-search__output {
     width: unset;
 }
+
+@keyframes custom {
+    0% {
+        transform: rotate(-360deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.md-header__button.md-logo>img {
+    animation: custom ease-in-out 3s infinite;
+}
+
+.md-nav__link {
+    padding: .3rem .1rem;
+    box-shadow: 0rem -0.125rem 0rem 0rem hsl(1, 83%, 63%) inset;
+    transition: box-shadow 150ms ease-in-out;
+}
+
+.md-nav__link:hover {
+    box-shadow: 0rem -2rem 0rem 0rem hsl(1, 83%, 63%) inset;
+    color: white;
+}
+
+.md-nav__item .md-nav__link--active {
+    box-shadow: 0rem -2rem 0rem 0rem hsl(1, 83%, 63%) inset;
+    color: white;
+}
