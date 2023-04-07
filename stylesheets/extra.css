@@ -23,3 +23,12 @@ td {
 .glightbox>img {
     margin-inline: auto;
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Scope One', serif;
+}
