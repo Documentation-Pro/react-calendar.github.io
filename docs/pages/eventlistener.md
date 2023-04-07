@@ -124,13 +124,6 @@ function getTileContent({ date }) {
 
 
 ## Conclusion
-As shown below, you can change the behaviour of your custom calendar by using props.
-You can read the selected date value from the calendar using the onClickDay prop. The same logic applies to using other props that listen for other events. 
-
-
-
-
-
 
 !!! success
     Now you should have a react calendar component with event listeners attached to it!
