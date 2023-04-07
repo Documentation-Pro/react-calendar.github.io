@@ -1,10 +1,17 @@
 /* .md-typeset code {
     color:#cbdc38;
 } */
+html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
 p {
     font-size: 1rem;
 }
 
-a,td{
+a,
+td {
     font-size: .8rem;
 }

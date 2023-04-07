@@ -124,6 +124,16 @@ In the documentation you will see a series of indicator messages with different 
 
 # Conclusion
 
+As shown in the diagram below react calendar has styles and event listeners that can be attached to it. Furthermore, React calendar is dependency for React which is used for front-end web development.
+
+``` mermaid
+graph LR
+  A[React] -->| Framework | B[Frontend];
+  C[React Caledar] -->| Package | A[React]
+  D[Event Listeners] --> | Attached | C
+  E[Styles] --> C
+```
+
 We hope you find our React Calendar documentation helpful! If you have any questions or feedback, please do not hesitate to contact us.
 
 ## Contributers
@@ -133,3 +143,5 @@ We hope you find our React Calendar documentation helpful! If you have any quest
 > Paarth Dhammi - pdhammi@my.bcit.ca
 
 Happy coding! 😄
+
+
