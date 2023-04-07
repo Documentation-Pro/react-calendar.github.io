@@ -35,5 +35,26 @@ h6 {
 }
 
 [data-md-color-scheme="slate"] {
-   background-color: black;
+    background-color: black;
+}
+
+.md-search__form {
+    min-width: 15rem;
+    width: 20rem;
+    border-radius: 1rem;
+}
+
+.md-search__inner {
+    min-width: 100%;
+}
+
+@media screen and (min-width: 60em) {
+    .md-search__inner {
+        width: 100% !important;
+        min-width: 100% !important;
+    }
+}
+
+.md-search__output {
+    width: unset;
 }
