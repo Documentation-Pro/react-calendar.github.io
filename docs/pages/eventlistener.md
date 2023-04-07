@@ -26,7 +26,7 @@ export default App;
 
 ## Props
 
-React Calendar has several props that allow you to customize its appearance and behavior. Props are the arguments we can pass to a react component.
+React Calendar has several props that allow you to customize its appearance and behavior. Props are the arguments we can pass to a react component. For further information refer to the official documentation [ReactProps](https://react.dev/learn/passing-props-to-a-component)
 
 ```onChange```
 

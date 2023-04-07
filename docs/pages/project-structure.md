@@ -44,11 +44,21 @@ calendar
     └── setupTests.js
 ```
 
-There are other ways to struture the app
+Here are a few ways to struture a react application.
 
-!!! Info
-    Grouping by features or routes
-[comment]: <> (Grouping by features or routes)
+``` mermaid
+graph LR
+  A[Project Structure] --> B[Grouping by features or routes ];
+  A --> C[Grouping by file type]
+  A --> D[Custom Project Structure]
+```
+
+## Grouping by features or routes
+
+We can see in the project tree below that all the files are separated based on the feature or route.
+The example below shows three different routes for the application: common, feed, and profile. So the files are separated based on the route they belong to.
+
+
 
 ```
 common/
@@ -72,9 +82,9 @@ profile/
 
 ```
 
-!!! Info
-    Grouping by file type
-[comment]: <> (Grouping by file type)
+## Grouping by file type
+
+In the project tree below, we can spot that the files interacting with API are in a different directory, and the files for components are in a separate folders.
 
 ```
 api/
@@ -93,7 +103,7 @@ components/
   ProfileHeader.js
   ProfileHeader.css
 ```
-## Customizations
+## Creating a custom project structure
 React allows developers to create a custom project structure, allowing them to structure their code
 as they wish. However, it is recommended to have minimal folder nesting while structuring your code.
 
