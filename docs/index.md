@@ -123,7 +123,7 @@ In the documentation, you will see a series of indicator messages with different
 !!! success
     Indicates you successfully completed a section or task, good job!
 
-# Conclusion
+## Conclusion
 
 As shown in the diagram below react calendar has styles and event listeners that can be attached to it. Furthermore, React Calendar is a dependency of React used for front-end web development.
 
