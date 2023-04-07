@@ -15,3 +15,11 @@ a,
 td {
     font-size: .8rem;
 }
+
+.glightbox {
+    display: flex;
+}
+
+.glightbox>img {
+    margin-inline: auto;
+}
