@@ -1,4 +1,7 @@
 <link rel="stylesheet" href="../../stylesheets/extra.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Scope+One&display=swap" rel="stylesheet">
 
 ## Overview
 [React Calendar](https://www.npmjs.com/package/react-calendar) is fully open-source, allowing all developers to use the calendar as they choose. As for the overall appearance of your calendar, we recommend importing our default css stylesheet and tweaking accordingly, as this calendar component was meant to handle the javascript logic for you.

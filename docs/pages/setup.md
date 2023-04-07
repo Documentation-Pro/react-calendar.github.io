@@ -1,4 +1,7 @@
 <link rel="stylesheet" href="../../stylesheets/extra.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Scope+One&display=swap" rel="stylesheet">
 
 ## Overview
 In this section, we will walk through the installation of [React Calendar](https://www.npmjs.com/package/react-calendar), which involves creating a new project directory, installing [React 16.3](https://react.dev/) or later, and importing the Calendar component in the App.js file. 

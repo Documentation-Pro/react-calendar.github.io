@@ -1,4 +1,7 @@
 <link rel="stylesheet" href="../../stylesheets/extra.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Scope+One&display=swap" rel="stylesheet">
 
 ## Overview
 Having a clear project structure is essential to collaborate on a web application. Also, it is important as it helps developers create new files following the existing conventions and helps them edit the existing files.

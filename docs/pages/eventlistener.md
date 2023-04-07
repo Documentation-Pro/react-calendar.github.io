@@ -1,4 +1,7 @@
 <link rel="stylesheet" href="../../stylesheets/extra.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Scope+One&display=swap" rel="stylesheet">
 
 ## Overview
 This section will walk you through how to manipulate your calendar with code examples.
