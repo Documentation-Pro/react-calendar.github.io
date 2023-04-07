@@ -48,8 +48,8 @@ theme:
     # Light mode
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: teal
-      accent: indigo
+      primary: red
+      accent: red
       toggle:
         icon: material/weather-sunny
         name: Switch to dark mode
@@ -57,8 +57,8 @@ theme:
     # Dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: lime
-      accent: blue
+      primary: red
+      accent: red
       toggle:
         icon: material/weather-night
         name: Switch to light mode

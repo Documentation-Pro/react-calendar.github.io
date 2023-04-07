@@ -33,3 +33,7 @@ h5,
 h6 {
     font-family: 'Scope One', serif;
 }
+
+[data-md-color-scheme="slate"] {
+   background-color: black;
+}
