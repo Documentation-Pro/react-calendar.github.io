@@ -33,3 +33,8 @@ h5,
 h6 {
     font-family: 'Scope One', serif;
 }
+
+.grid.cards >ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}

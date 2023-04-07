@@ -5,6 +5,7 @@ nav:
   - Project Structure: "pages/project-structure.md"
   - Styling React Calendar: "pages/styling.md"
   - Event Listeners: "pages/eventlistener.md"
+  - Useful Links: "pages/further-readings.md"
   - Troubleshooting: "pages/troubleshooting.md"
   - Glossary: "pages/glossary.md"
 
@@ -24,7 +25,6 @@ theme:
   features:
     - navigation.sections
     - navigation.top
-    # - toc.integrate
     - announce.dismiss
     - content.action.edit
     - content.action.view
@@ -81,17 +81,20 @@ plugins:
   - search
 
 markdown_extensions:
-  - toc:
-      toc_depth: 3
   - attr_list
   - md_in_html
+  - toc:
+      toc_depth: 3
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
   - admonition
   - pymdownx.details
   - pymdownx.superfences:
       custom_fences:
         - name: mermaid
           class: mermaid
-          # format: !!python/name:pymdownx.superfences.fence_code_format
+          format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.highlight:
       anchor_linenums: true
       line_spans: __span
