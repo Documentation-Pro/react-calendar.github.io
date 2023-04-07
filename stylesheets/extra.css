@@ -8,7 +8,7 @@ html {
 }
 
 p {
-    font-size: 1rem;
+    font-size: .9rem;
 }
 
 a,
@@ -22,6 +22,7 @@ td {
 
 .glightbox>img {
     margin-inline: auto;
+    padding: 1rem;
 }
 
 h1,
