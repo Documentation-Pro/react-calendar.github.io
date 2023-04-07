@@ -4,7 +4,7 @@
 This section will walk you through how to manipulate your calendar with code examples.
 
 !!! Info
-    [React Calendar](https://www.npmjs.com/package/react-calendar) is a powerful tool that can be used to create interactive and customizable calendars in your React applications. With React Calendar, you can manipulate the data and the calendar itself by using React props.
+    [React Calendar](https://www.npmjs.com/package/react-calendar)  is a powerful tool that can be used to create interactive and customizable calendars in your React applications. With React Calendar, you can manipulate the data and calendar by using React props.
 
 
 ```js
@@ -23,7 +23,7 @@ export default App;
 
 ## Props
 
-React Calendar comes with several props that allow you to customize its appearance and behavior. Props are the arguements we can pass to a react component.
+React Calendar has several props that allow you to customize its appearance and behavior. Props are the arguments we can pass to a react component.
 
 ```onChange```
 
@@ -120,10 +120,10 @@ function getTileContent({ date }) {
 
 - `onClickDay`/`onClickDecade`/`onClickMonth`/`onClickWeekNumber`/`onClickYear` : This prop allows you to set a callback function that is called when a user clicks on a certain area in the calendar. The function receives two arguments: the value of the clicked area, and the original click event.
 
-- `onKeyDown` : This prop allows you to set a callback function that is called when a user presses a key while the calendar is in focus. The function receives two arguments: the key event, and the value of the currently focused date.
+- `onKeyDown` : This prop allows you to set a callback function that is called when a user presses a key while the calendar is in focus. The function receives two arguments: the key event and the value of the currently focused date.
 
 
 ## Conclusion
 
 !!! success
-    Now you should have a react calendar component with event listeners attached to it!
+    Now you should have a react calendar component with event listeners attached!

@@ -1,25 +1,25 @@
 <link rel="stylesheet" href="../../stylesheets/extra.css" />
 
 ## Overview
-In this section we will walk through the installation of [React Calendar](https://www.npmjs.com/package/react-calendar) which involves creating a new project directory, installing [React 16.3](https://react.dev/) or later, and importing the Calendar component in the App.js file. 
+In this section, we will walk through the installation of [React Calendar](https://www.npmjs.com/package/react-calendar), which involves creating a new project directory, installing [React 16.3](https://react.dev/) or later, and importing the Calendar component in the App.js file. 
 
 ## Installation Steps for React Calendar
 
 !!! warning
     As for [Compatibility](https://github.com/wojtekmaj/react-calendar#compatibility), your project needs to use [React 16.3](https://react.dev/) or later.
 
-[React Calendar](https://www.npmjs.com/package/react-calendar) uses modern web technologies. That's why it's so fast, lightweight and easy to style. This, however, comes at a cost of supporting only modern browsers.
+[React Calendar](https://www.npmjs.com/package/react-calendar) uses modern web technologies. That's why it's fast, lightweight, and easy to style. However, it comes at the cost of supporting only modern browsers.
  
 !!! info
-    Please be patient as installing react on your system may take a few minutes
+    Please be patient, as installing React on your system may take a few minutes
  
 1. Create a new project directory
   > npx create-react-app my-app
-2. In Visual Studio Code, open your desired terminal in your current project directory
+1. In Visual Studio Code, open your desired terminal in your current project directory
   > cd my-app
-3. To install react-calendar
+1. To install react-calendar
   > npm install react-calendar
-4. Run the following commands in order:
+1. Run the following commands in order:
   > npm start
 
 ![image of react app](../images/reactexample.png "Upon installing react")
@@ -61,6 +61,6 @@ Everything you need to access/manipulate with React Calendar is going to be foun
     Indicates additional information or tips. -->
 
 !!! success
-    You have successfully intergrated react calendar with react application.
+    You have successfully integrated react calendar with react application.
 
   You should now have a working React Calendar in your React Application. Great work!

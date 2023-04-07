@@ -1,7 +1,7 @@
 <link rel="stylesheet" href="../../stylesheets/extra.css" />
 
 ## Overview
-[React Calendar](https://www.npmjs.com/package/react-calendar) is fully open-source providing flexibility to all developers to use the calendar as they choose. As for the overall appearance of your calendar, we recommend importing our default css stylesheet and tweak accordingly as this calendar component was meant to handle the javascript logic for you.
+[React Calendar](https://www.npmjs.com/package/react-calendar) is fully open-source, allowing all developers to use the calendar as they choose. As for the overall appearance of your calendar, we recommend importing our default css stylesheet and tweaking accordingly, as this calendar component was meant to handle the javascript logic for you.
 
 The first image shows what it will look like after setting up.
 
@@ -13,7 +13,7 @@ The second image shows the Calendar with the default stylesheet imported.
 
 ## Customization
 Customizing your Calendar
-Custom styling - If you want to use default React-Calendar styling to build upon its existings syles, you can import React-Calendar's styles by importing react-calendars default css file (this will make it easier to customize as you can see existing styles):
+Custom styling - If you want to use default React-Calendar styling to build upon its existing syles, you can import React-Calendar's styles by importing the react-calendars default css file (this will make it easier to customize as you can see existing styles):
 ```js
 import 'react-calendar/dist/Calendar.css';
 ```

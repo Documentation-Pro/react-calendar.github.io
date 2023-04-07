@@ -8,7 +8,7 @@ Having a clear project structure is essential to collaborate on a web applicatio
 
 
 !!! info
-    This is a reference page for developers, we have already created the app on installing react calendar page.
+    This page is a reference page for developers. We have already created the app on installing react calendar page.
 
 
 
@@ -90,7 +90,11 @@ components/
   ProfileHeader.js
   ProfileHeader.css
 ```
-## Creating and navigating between files and folders
+## Customizations
+React allows developers to create a custom project structure, allowing them to structure their code
+as they wish. However, it is recommended to have minimal folder nesting while structuring your code.
+
+List of some useful commands to help you create a custom project structure.
 
 Create a new directory test
 
@@ -107,6 +111,7 @@ Create a new javascript file
 Opening file in Visual Studio Code
 
 > code calendar.js
+
 
 ## Conclusion
 !!! success

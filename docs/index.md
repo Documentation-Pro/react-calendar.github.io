@@ -4,7 +4,7 @@
 
 # React Calendar Documentation: Installation, Usage, and Customization Guide
 
-Welcome to our documentation for React Calendar! 📖 In this guide, you will learn how to install and use the React Calendar package, as well as customize it to suit your needs.
+Welcome to our documentation for React Calendar! 📖 In this guide, you will learn how to install and use the React Calendar package and customize it to suit your needs.
 
 For full official npm documentation visit [npm-React-Calendar](https://www.npmjs.com/package/react-calendar)
 
@@ -14,7 +14,8 @@ Want to try a live demo? Visit [Live Demo](https://projects.wojtekmaj.pl/react-c
 
 ## What is React Calendar? 📆
 
-React Calendar is a lightweight calendar package designed for use in React applications. It provides a simple and customizable way to display calendars and schedule events. It is currently being managed by a developer under the name Wojciech Maj. The developer has made this amazing tool light and fast, extremely customizable, work with any language, rock-solid/bug-free, and best of all open source! (forever)
+React Calendar is a lightweight calendar package designed for use in React applications. It provides a simple and customizable way to display calendars and schedule events. It is currently being managed by a developer under the name Wojciech Maj. The developer has made this incredible tool light and fast, extremely customizable, works with any language, is rock-solid/bug-free, and, best of all, open source! (Forever)
+
 
 ## Intended Users
 
@@ -26,8 +27,8 @@ Beginner developers who need to set up a React Calendar for a personal project.
     Prerequisites:
 
     - Basic understanding of Command Line Interface.
-    - Basic understanding of Visual Studio Code.
-    - Basic proficiency of Node package manager.
+    - Basic knowledge of Visual Studio Code.
+    - Basic knowledge of Node package manager.
 
 
 ## Getting Started
@@ -36,7 +37,7 @@ To use React Calendar in your project, you'll need to have the following pre-req
 
  > [Node JS](https://nodejs.org/en) Node Environment is required to use React and React Calendar
 
- > [Visual Studio Code](https://code.visualstudio.com/) Working with documentation requires a text editor, please install VS Code or you can work with your favorite text editor
+ > [Visual Studio Code](https://code.visualstudio.com/) Working with documentation requires a text editor, please install VS Code, or you can work with your favorite text editor
 
 
 <figure markdown>
@@ -87,7 +88,7 @@ Thankfully, [React Calendar](https://www.npmjs.com/package/react-calendar) provi
 
 ### Props
 
-Props are the arguements passed to a react component. Props determines the behavior of a component.
+Props are the arguments passed to a react component. Props determine the behavior of a component.
 
 
 * `value` : sets the selected date.
@@ -100,7 +101,7 @@ Props are the arguements passed to a react component. Props determines the behav
 
 ### Styling
 
-If you want to use default Calendar styling to build upon its existings syles, you can import React-Calendar's styles by importing Calendar.css
+If you want to use default Calendar styling to build upon its existing syles, you can import React-Calendar's styles by importing Calendar.css
 
 ```javascript
 import 'react-calendar/dist/Calendar.css';
@@ -108,7 +109,7 @@ import 'react-calendar/dist/Calendar.css';
 
 ## Note and warning messages
 
-In the documentation you will see a series of indicator messages with different meanings. The messages will be as follows:
+In the documentation, you will see a series of indicator messages with different meanings. The messages will be as follows:
 
 !!! danger
     Specifies actions that may cause an error or will cause the application to crash.
@@ -124,7 +125,7 @@ In the documentation you will see a series of indicator messages with different 
 
 # Conclusion
 
-As shown in the diagram below react calendar has styles and event listeners that can be attached to it. Furthermore, React calendar is dependency for React which is used for front-end web development.
+As shown in the diagram below react calendar has styles and event listeners that can be attached to it. Furthermore, React Calendar is a dependency of React used for front-end web development.
 
 ``` mermaid
 graph LR
@@ -136,7 +137,7 @@ graph LR
 
 We hope you find our React Calendar documentation helpful! If you have any questions or feedback, please do not hesitate to contact us.
 
-## Contributers
+## Contributors
 
 > Jack Boeri - jboeri@my.bcit.ca
 
