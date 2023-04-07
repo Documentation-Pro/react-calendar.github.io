@@ -110,7 +110,7 @@ If you want to use default Calendar styling to build upon its existing syles, yo
 import 'react-calendar/dist/Calendar.css';
 ```
 
-## Note and warning messages
+## Notes and warnings
 
 In the documentation, you will see a series of indicator messages with different meanings. The messages will be as follows:
 

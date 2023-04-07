@@ -15,6 +15,7 @@ theme:
   name: material
   nav_style: light
   highlightjs: true
+  logo: 'images/logo.svg'
   hljs_languages:
     - javascript
 
