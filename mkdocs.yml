@@ -19,7 +19,7 @@ theme:
     - javascript
 
   font:
-    text: Roboto
+    text: Open Sans
     code: Roboto Mono
   features:
     - navigation.sections
