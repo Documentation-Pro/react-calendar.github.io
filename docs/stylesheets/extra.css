@@ -73,18 +73,13 @@ h6 {
     animation: custom ease-in-out 3s infinite;
 }
 
-.md-nav__link {
+p>a {
     padding: .3rem .1rem;
     box-shadow: 0rem -0.125rem 0rem 0rem hsl(1, 83%, 63%) inset;
-    transition: box-shadow 150ms ease-in-out;
+    transition: all 150ms ease-in-out !important;
 }
 
-.md-nav__link:hover {
-    box-shadow: 0rem -2rem 0rem 0rem hsl(1, 83%, 63%) inset;
-    color: white;
-}
-
-.md-nav__item .md-nav__link--active {
-    box-shadow: 0rem -2rem 0rem 0rem hsl(1, 83%, 63%) inset;
-    color: white;
+p>a:hover {
+    box-shadow: 0rem -1.5rem 0rem 0rem hsl(1, 83%, 63%) inset;
+    color: white !important;
 }
