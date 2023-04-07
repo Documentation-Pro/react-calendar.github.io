@@ -25,7 +25,7 @@ We used [MkDocs](https://squidfunk.github.io/mkdocs-material/) to power the docu
 
 ## Using Markdown
 
-This documentation was the first we've written and we both haven't ever wrote in Markdown before.
+This documentation was the first we've written and we both haven't ever wrote in Markdown before. This was a great learning experience for us!
 
 ## Readability
 
